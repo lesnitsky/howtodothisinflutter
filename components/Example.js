@@ -9,6 +9,7 @@ export default ({ children, reactnative, flutter }) => (
                 flex-basis: 50%;
                 box-sizing: border-box;
                 padding: 10px;
+                max-width: 50%;
             }
 
             h2 {
