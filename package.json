@@ -1,0 +1,25 @@
+{
+  "name": "howtodothisinflutter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "dependencies": {
+    "@mapbox/rehype-prism": "^0.3.0",
+    "@mdx-js/mdx": "^0.16.5",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-mdx": "^1.2.0",
+    "prismjs": "^1.15.0"
+  }
+}
