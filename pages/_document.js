@@ -7,7 +7,16 @@ export default class MyDocument extends Document {
                 <Head>
                     <title>How to do this in Flutter</title>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                    <style>{`body { margin: 0; background: #212121; color: white; font-family: sans-serif; }`}</style>
+                    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+                    <style>{`
+                    body { 
+                        margin: 0; 
+                        background: #212121; 
+                        color: white; 
+                        font-family: 'Roboto', sans-serif; 
+                    }
+                    `}</style>
                 </Head>
                 <body>
                     <Main />

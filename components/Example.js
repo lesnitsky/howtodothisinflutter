@@ -8,8 +8,13 @@ export default ({ children, reactnative, flutter }) => (
             .example-container {
                 flex-basis: 50%;
                 box-sizing: border-box;
-                padding: 10px;
                 max-width: 50%;
+                padding-right: 10px;
+            }
+
+            .example-container + .example-container {
+                padding-right: 0;
+                padding-left: 10px;
             }
 
             h2 {
