@@ -5,7 +5,7 @@ import Example from '../components/Example';
 <Example reactnative>
 
 ```js
-fetch('https://somedomain.com/api')
+fetch(API_URL)
     .then(res => res.json())
     .then(console.log);
 ```
@@ -23,8 +23,9 @@ dependencies:
 import 'dart:convert'; // json
 import 'package:http/http.dart' as http;
 
-http.get('someurl').then((http.Response res) {
+http.get(API_URL).then((http.Response res) {
     final data = json.decode(res.body);
+    print(data);
 });
 
 ```
