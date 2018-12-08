@@ -56,15 +56,6 @@ export default () => (
                 margin: 0 10px;
             }
 
-            a {
-                text-decoration: none;
-                color: #6196cc;
-            }
-
-            a:visited {
-                color: #6196cc;
-            }
-
             .credits {
                 line-height: 0;
             }

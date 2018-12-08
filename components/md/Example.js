@@ -23,10 +23,6 @@ export default ({ children, reactnative, flutter }) => (
                 padding-right: 0;
                 padding-left: 10px;
             }
-
-            h2 {
-                color: #6196cc;
-            }
         `}</style>
     </div>
 );

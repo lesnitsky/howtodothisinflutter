@@ -22,6 +22,7 @@ export default () => (
 
             h2 {
                 font-size: 1.2em;
+                color: white;
             }
 
             section {

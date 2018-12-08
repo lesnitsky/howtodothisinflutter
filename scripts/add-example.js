@@ -14,8 +14,6 @@ const inquirer = require('inquirer');
         },
     ]);
 
-    console.log(exampleName);
-
     const exampleIdentifier = toSnakeCase(exampleName);
 
     if (existingExamples.some(example => example.startsWith(exampleIdentifier))) {
