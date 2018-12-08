@@ -7,7 +7,4 @@ const withMDX = require('@zeit/next-mdx')({
 });
 const withCSS = require('@zeit/next-css');
 
-module.exports = {
-    ...withCSS(withMDX()),
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/howtodothisinflutter' : '',
-};
+module.exports = withCSS(withMDX());
