@@ -1,6 +1,6 @@
 # How to do this in Flutter?
 
-Cheat sheet for react-native developers.
+Cheet sheet for react-native developers.
 
 > Built with [mdx](https://mdxjs.com/) and [nextjs](https://nextjs.org/)
 
