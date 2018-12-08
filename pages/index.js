@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 import 'prismjs/themes/prism-tomorrow.css';
 
 import Description from '../components/Description';
@@ -19,6 +20,10 @@ export default class App extends Component {
     render() {
         return (
             <div className="app">
+                <Head>
+                    <title>How to do this in Flutter?</title>
+                </Head>
+
                 <Description />
                 <Toc tocItems={this.state.toc} />
 
@@ -26,7 +31,7 @@ export default class App extends Component {
                 <StatefullComponent />
                 <Fetch />
                 <JSON />
-        {/* EXAMPLE_USAGE */}
+                {/* EXAMPLE_USAGE */}
 
                 <section className="footer-container">
                     <Footer />
