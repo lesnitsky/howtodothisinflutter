@@ -644,6 +644,14 @@
     "@mdx-js/tag" "^0.15.6"
     loader-utils "^1.1.0"
 
+"@mdx-js/loader@^0.16.0":
+  version "0.16.5"
+  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-0.16.5.tgz#3130818c97f37720b0c7e31df1b3cb8875e06226"
+  dependencies:
+    "@mdx-js/mdx" "^0.16.5"
+    "@mdx-js/tag" "^0.16.1"
+    loader-utils "^1.1.0"
+
 "@mdx-js/mdx@^0.15.7":
   version "0.15.7"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-0.15.7.tgz#5fde5841d7b6f4c78f80c19fff559532af5ce5ad"
@@ -678,6 +686,10 @@
     create-react-context "^0.2.2"
     hoist-non-react-statics "^2.5.5"
     prop-types "^15.6.1"
+
+"@mdx-js/tag@^0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@mdx-js/tag/-/tag-0.16.1.tgz#d4a58971832e0a514594ae36839a5a0e7d0e1880"
 
 "@webassemblyjs/ast@1.7.8":
   version "1.7.8"
@@ -823,7 +835,7 @@
     mini-css-extract-plugin "0.4.3"
     postcss-loader "3.0.0"
 
-"@zeit/next-mdx@^1.2.0":
+"@zeit/next-mdx@^1.1.1-canary.3":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@zeit/next-mdx/-/next-mdx-1.2.0.tgz#e7c85400e210848e1d56a4229d46eec4a4ca5566"
   dependencies:
