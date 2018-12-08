@@ -1,4 +1,4 @@
-import Example from '../components/Example';
+import Example from '../components/md/Example';
 
 # Hello world
 
@@ -26,7 +26,9 @@ export default class HelloWorldApp extends Component {
 ```dart
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() {
+    runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

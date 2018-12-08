@@ -12,6 +12,13 @@ export default ({ children, reactnative, flutter }) => (
                 padding-right: 10px;
             }
 
+            @media only screen and (max-width: 1100px) {
+                .example-container {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+            }
+
             .example-container + .example-container {
                 padding-right: 0;
                 padding-left: 10px;

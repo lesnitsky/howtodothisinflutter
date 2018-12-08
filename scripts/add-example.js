@@ -25,7 +25,7 @@ const inquirer = require('inquirer');
 
     const exampleFilenamePath = path.join(__dirname, '..', 'recipes', `${exampleIdentifier}.md`);
     const content = `
-import Example from '../components/Example';
+import Example from '../components/md/Example';
 
 # ${exampleName}
 
