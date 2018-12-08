@@ -3,10 +3,12 @@ import 'prismjs/themes/prism-tomorrow.css';
 
 import Description from '../components/Description';
 import Toc from '../components/Toc';
+import Footer from '../components/Footer';
 
 import HelloWorld from '../recipes/hello-world.md';
 import Fetch from '../recipes/fetch.md';
 import JSON from '../recipes/json.md';
+import StatefullComponent from '../recipes/statefull-component.md';
 // <EXAMPLE_IMPORT>
 
 export default class App extends Component {
@@ -23,7 +25,15 @@ export default class App extends Component {
                 <HelloWorld />
                 <Fetch />
                 <JSON />
-                {/* EXAMPLE_USAGE */}
+                <StatefullComponent />
+        {/* EXAMPLE_USAGE */}
+
+                <section className="footer-container">
+                    <Footer />
+                    <p>
+                        MIT © <a href="https://twitter.com/lesnitsky_a">Andrei Lesnitsky</a>
+                    </p>
+                </section>
 
                 <style jsx global>{`
                     body {
@@ -73,6 +83,15 @@ export default class App extends Component {
 
                     a:visited {
                         color: #6196cc;
+                    }
+
+                    .footer-container {
+                        font-size: 24px;
+                        padding: 2em 0;
+                    }
+
+                    .footer-container > p {
+                        font-size: 0.6em;
                     }
                 `}</style>
             </div>
