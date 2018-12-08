@@ -23,9 +23,9 @@ export default class App extends Component {
                 <Toc tocItems={this.state.toc} />
 
                 <HelloWorld />
+                <StatefullComponent />
                 <Fetch />
                 <JSON />
-                <StatefullComponent />
         {/* EXAMPLE_USAGE */}
 
                 <section className="footer-container">
