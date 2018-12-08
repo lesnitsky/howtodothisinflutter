@@ -6,8 +6,8 @@ import Example from '../components/md/Example';
 
 ```js
 fetch(API_URL)
-    .then(res => res.json())
-    .then(console.log);
+  .then(res => res.json())
+  .then(console.log);
 ```
 
 </Example>
@@ -16,7 +16,7 @@ fetch(API_URL)
 
 ```yaml
 dependencies:
-    http: ^0.12.0
+  http: ^0.12.0
 ```
 
 ```dart
