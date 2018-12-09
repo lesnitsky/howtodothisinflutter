@@ -1,5 +1,5 @@
 export default ({ tocItems }) => (
-    <section className="toc-container">
+    <section className="toc-container" id="toc">
         <h1>Table of Contents</h1>
         <ul className="toc">
             {tocItems.map(item => (

@@ -5,6 +5,7 @@ import 'prismjs/themes/prism-tomorrow.css';
 import Description from '../components/Description';
 import Toc from '../components/Toc';
 import Footer from '../components/Footer';
+import BackToToc from '../components/BackToToc';
 
 import HelloWorld from '../recipes/hello-world.md';
 import Fetch from '../recipes/fetch.md';
@@ -15,6 +16,7 @@ import StatefullComponent from '../recipes/statefull-component.md';
 export default class App extends Component {
     state = {
         toc: [],
+        backToTocVisible: false,
     };
 
     render() {
@@ -32,6 +34,8 @@ export default class App extends Component {
                 <Fetch />
                 <JSON />
                 {/* EXAMPLE_USAGE */}
+
+                <BackToToc isVisible={this.state.backToTocVisible} />
 
                 <section className="footer-container">
                     <Footer />
@@ -118,6 +122,24 @@ export default class App extends Component {
 
                 return [...items, item];
             }, []),
+        });
+
+        const toc = document.querySelector('.toc-container');
+
+        window.addEventListener('scroll', () => {
+            requestAnimationFrame(() => {
+                const tocBottom = toc.offsetTop + toc.offsetHeight;
+
+                if (window.scrollY >= tocBottom && !this.state.backToTocVisible) {
+                    console.log('v');
+                    this.setState({ backToTocVisible: true });
+                }
+
+                if (window.scrollY < tocBottom && this.state.backToTocVisible) {
+                    console.log('nv');
+                    this.setState({ backToTocVisible: false });
+                }
+            });
         });
     }
 }
