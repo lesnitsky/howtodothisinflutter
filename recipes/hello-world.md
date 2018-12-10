@@ -6,7 +6,8 @@ import Example from '../components/md/Example';
 
 ```js
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, AppRegistry } from 'react-native';
+import { name as appName } from './app.json';
 
 export default class HelloWorldApp extends Component {
   render() {
@@ -17,6 +18,8 @@ export default class HelloWorldApp extends Component {
     );
   }
 }
+
+AppRegistry.registerComponent(appName, () => App);
 ```
 
 </Example>

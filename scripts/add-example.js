@@ -56,7 +56,7 @@ import Example from '../components/md/Example';
             '// <EXAMPLE_IMPORT>',
             `import ${exampleIdentifierCamel} from '../recipes/${exampleIdentifier}.md';\n// <EXAMPLE_IMPORT>`
         )
-        .replace('{/* EXAMPLE_USAGE */}', `<${exampleIdentifierCamel} />\n        {/* EXAMPLE_USAGE */}`);
+        .replace('{/* EXAMPLE_USAGE */}', `<${exampleIdentifierCamel} />\n                {/* EXAMPLE_USAGE */}`);
 
     fs.writeFileSync(indexPagePath, indexPageSource);
 
