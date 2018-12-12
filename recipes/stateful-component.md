@@ -1,6 +1,6 @@
 import Example from '../components/md/Example';
 
-# Statefull component
+# Stateful component
 
 <Example reactnative>
 

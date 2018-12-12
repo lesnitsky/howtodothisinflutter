@@ -11,7 +11,7 @@ export default () => (
             Find Flutter alternatives to familiar concepts
         </h2>
 
-        <small>Many examples are not really specific to React Native or Flutter, but rather JavaScript and Dart</small>
+        <small>Many examples are not really specific to React Native or Flutter but rather JavaScript and Dart</small>
 
         <Footer />
 

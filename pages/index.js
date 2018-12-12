@@ -10,7 +10,7 @@ import BackToToc from '../components/BackToToc';
 import HelloWorld from '../recipes/hello-world.md';
 import Fetch from '../recipes/fetch.md';
 import JSON from '../recipes/json.md';
-import StatefullComponent from '../recipes/statefull-component.md';
+import StatefulComponent from '../recipes/stateful-component.md';
 import PureComponent from '../recipes/pure-component.md';
 import Arrays from '../recipes/arrays.md';
 import HideStatusbar from '../recipes/hide-statusbar.md';
@@ -34,7 +34,7 @@ export default class App extends Component {
 
                 <HelloWorld />
                 <PureComponent />
-                <StatefullComponent />
+                <StatefulComponent />
                 <HideStatusbar />
                 <Arrays />
                 <Fetch />
