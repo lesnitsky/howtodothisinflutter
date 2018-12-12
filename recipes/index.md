@@ -7,6 +7,8 @@ import Arrays from './arrays.md';
 import HideStatusbar from './hide-statusbar.md';
 import CombiningPropsAndState from './combining-props-and-state.md';
 import RequiredAndDefaultProps from './required-and-default-props.md';
+import AsyncAwait from './async-await.md';
+import PlatformSpecificCode from './platform-specific-code.md';
 
 <div className="toc-container">
 
@@ -41,6 +43,10 @@ import RequiredAndDefaultProps from './required-and-default-props.md';
 
 <CombiningPropsAndState />
 
+## Platform specific code
+
+<PlatformSpecificCode />
+
 ## Hide status bar
 
 <HideStatusbar />
@@ -52,6 +58,10 @@ import RequiredAndDefaultProps from './required-and-default-props.md';
 ## Fetch
 
 <Fetch />
+
+## Async Await
+
+<AsyncAwait />
 
 ## JSON
 
