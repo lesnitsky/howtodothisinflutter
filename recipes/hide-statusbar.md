@@ -1,6 +1,6 @@
 import Example from '../components/md/Example';
 
-# Make app fullscreen
+# Hide status bar
 
 <Example reactnative>
 

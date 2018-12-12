@@ -6,17 +6,16 @@ import Example from '../components/md/Example';
 
 ```js
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Greeter = ({ name }) => (
+type Props = {
+  name: string,
+};
+
+const Greeter = ({ name }: Props) => (
   <View>
     <Text>Hello, {name}</Text>
   </View>
 );
-
-Greeter.propTypes = {
-  name: PropTypes.string.isRequired,
-};
 ```
 
 </Example>

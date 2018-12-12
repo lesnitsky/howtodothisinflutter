@@ -6,27 +6,26 @@ import Example from '../components/md/Example';
 
 ```js
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Button } from 'react-native';
 
-class ComponentWithState extends React.Component {
+type State = {
+  counter: number,
+};
+
+class ComponentWithState extends React.Component<{}, State> {
   state = {
     counter: 0,
   };
 
-  static propTypes = {
-    counter: PropTypes.number.isRequired,
-  };
-
   increment = () => {
     this.setState({
-      counter: this.state.counter++,
+      counter: this.state.counter + 1,
     });
   };
 
   decrement = () => {
     this.setState({
-      counter: this.state.counter--,
+      counter: this.state.counter - 1,
     });
   };
 

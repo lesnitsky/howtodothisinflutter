@@ -13,7 +13,7 @@ import JSON from '../recipes/json.md';
 import StatefullComponent from '../recipes/statefull-component.md';
 import PureComponent from '../recipes/pure-component.md';
 import Arrays from '../recipes/arrays.md';
-import MakeAppFullscreen from '../recipes/make-app-fullscreen.md';
+import HideStatusbar from '../recipes/hide-statusbar.md';
 // <EXAMPLE_IMPORT>
 
 export default class App extends Component {
@@ -35,7 +35,7 @@ export default class App extends Component {
                 <HelloWorld />
                 <PureComponent />
                 <StatefullComponent />
-                <MakeAppFullscreen />
+                <HideStatusbar />
                 <Arrays />
                 <Fetch />
                 <JSON />
