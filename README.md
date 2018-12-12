@@ -54,6 +54,8 @@ This repo contains a set of examples in React Native and their alternatives writ
 
 Contributions are very welcome! 🙏
 
+Leave a comment on [this issue](https://github.com/lesnitsky/howtodothisinflutter/issues/2) describing what example do you want to see
+
 How to contribute new recipes:
 
 -   🍴 fork this repo
