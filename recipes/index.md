@@ -9,6 +9,7 @@ import CombiningPropsAndState from './combining-props-and-state.md';
 import RequiredAndDefaultProps from './required-and-default-props.md';
 import AsyncAwait from './async-await.md';
 import PlatformSpecificCode from './platform-specific-code.md';
+import LockOrientation from './lock-orientation.md';
 
 <div className="toc-container">
 
@@ -50,6 +51,10 @@ import PlatformSpecificCode from './platform-specific-code.md';
 ## Hide status bar
 
 <HideStatusbar />
+
+## Lock orientation
+
+<LockOrientation />
 
 ## Arrays
 
