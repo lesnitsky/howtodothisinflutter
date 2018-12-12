@@ -14,6 +14,8 @@ import StatefulComponent from '../recipes/stateful-component.md';
 import PureComponent from '../recipes/pure-component.md';
 import Arrays from '../recipes/arrays.md';
 import HideStatusbar from '../recipes/hide-statusbar.md';
+import CombiningPropsAndState from '../recipes/combining-props-and-state.md';
+import RequiredAndDefaultProps from '../recipes/required-and-default-props.md';
 // <EXAMPLE_IMPORT>
 
 export default class App extends Component {
@@ -34,7 +36,9 @@ export default class App extends Component {
 
                 <HelloWorld />
                 <PureComponent />
+                <RequiredAndDefaultProps />
                 <StatefulComponent />
+                <CombiningPropsAndState />
                 <HideStatusbar />
                 <Arrays />
                 <Fetch />
