@@ -1,7 +1,5 @@
 import Example from '../components/md/Example';
 
-# Hide status bar
-
 <Example reactnative>
 
 ```js

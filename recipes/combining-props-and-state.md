@@ -1,7 +1,5 @@
 import Example from '../components/md/Example';
 
-# Combining props and state
-
 <Example reactnative>
 
 ```js

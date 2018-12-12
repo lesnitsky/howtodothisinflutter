@@ -1,6 +1,6 @@
 export default ({ isVisible }) => (
     <a
-        href="#toc"
+        href="#table-of-contents"
         className="back-to-toc"
         style={{
             transform: `translateY(${isVisible ? 0 : 200}%)`,

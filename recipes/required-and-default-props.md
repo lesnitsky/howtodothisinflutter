@@ -1,7 +1,5 @@
 import Example from '../components/md/Example';
 
-# Required and default props
-
 <Example reactnative>
 
 ```js

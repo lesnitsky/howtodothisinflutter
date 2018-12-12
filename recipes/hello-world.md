@@ -1,7 +1,5 @@
 import Example from '../components/md/Example';
 
-# Hello world
-
 <Example reactnative>
 
 ```js

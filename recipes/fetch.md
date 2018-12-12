@@ -1,7 +1,5 @@
 import Example from '../components/md/Example';
 
-# Fetching data
-
 <Example reactnative>
 
 ```js

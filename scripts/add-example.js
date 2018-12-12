@@ -22,10 +22,7 @@ const inquirer = require('inquirer');
     }
 
     const exampleFilenamePath = path.join(__dirname, '..', 'recipes', `${exampleIdentifier}.md`);
-    const content = `
-import Example from '../components/md/Example';
-
-# ${exampleName}
+    const content = `import Example from '../components/md/Example';
 
 <Example reactnative>
 
@@ -46,21 +43,26 @@ import Example from '../components/md/Example';
 
     fs.writeFileSync(exampleFilenamePath, content);
 
-    const indexPagePath = path.join(__dirname, '../pages/index.js');
+    const indexPagePath = path.join(__dirname, '../recipes/index.md');
     let indexPageSource = fs.readFileSync(indexPagePath, 'utf-8');
 
     const exampleIdentifierCamel = snakeToCamel(exampleIdentifier);
 
-    indexPageSource = indexPageSource
-        .replace(
-            '// <EXAMPLE_IMPORT>',
-            `import ${exampleIdentifierCamel} from '../recipes/${exampleIdentifier}.md';\n// <EXAMPLE_IMPORT>`
-        )
-        .replace('{/* EXAMPLE_USAGE */}', `<${exampleIdentifierCamel} />\n                {/* EXAMPLE_USAGE */}`);
+    const lines = indexPageSource.split('\n');
+    const lastImportIndex = lines.findIndex((value, index) => {
+        const nextValue = lines[index + 1];
 
-    fs.writeFileSync(indexPagePath, indexPageSource);
+        if (!nextValue.startsWith('import')) {
+            return true;
+        }
+    });
 
-    console.log(`We're all set! Check out and edit ${exampleFilenamePath}`);
+    lines.splice(lastImportIndex + 1, 1, `import ${exampleIdentifierCamel} from './${exampleIdentifier}.md';\n`);
+    lines.push(...[`## ${exampleName}`, '', `<${exampleIdentifierCamel} />`, '']);
+
+    fs.writeFileSync(indexPagePath, lines.join('\n'));
+
+    console.log(`We're all set! \nCheck out and edit ./recipes/${exampleIdentifier}.md`);
 })().catch(console.error);
 
 /**

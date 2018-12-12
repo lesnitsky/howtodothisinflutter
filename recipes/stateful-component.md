@@ -1,7 +1,5 @@
 import Example from '../components/md/Example';
 
-# Stateful component
-
 <Example reactnative>
 
 ```js

@@ -3,24 +3,12 @@ import Head from 'next/head';
 import 'prismjs/themes/prism-tomorrow.css';
 
 import Description from '../components/Description';
-import Toc from '../components/Toc';
 import Footer from '../components/Footer';
 import BackToToc from '../components/BackToToc';
-
-import HelloWorld from '../recipes/hello-world.md';
-import Fetch from '../recipes/fetch.md';
-import JSON from '../recipes/json.md';
-import StatefulComponent from '../recipes/stateful-component.md';
-import PureComponent from '../recipes/pure-component.md';
-import Arrays from '../recipes/arrays.md';
-import HideStatusbar from '../recipes/hide-statusbar.md';
-import CombiningPropsAndState from '../recipes/combining-props-and-state.md';
-import RequiredAndDefaultProps from '../recipes/required-and-default-props.md';
-// <EXAMPLE_IMPORT>
+import Examples from '../recipes/index.md';
 
 export default class App extends Component {
     state = {
-        toc: [],
         backToTocVisible: false,
     };
 
@@ -32,18 +20,10 @@ export default class App extends Component {
                 </Head>
 
                 <Description />
-                <Toc tocItems={this.state.toc} />
 
-                <HelloWorld />
-                <PureComponent />
-                <RequiredAndDefaultProps />
-                <StatefulComponent />
-                <CombiningPropsAndState />
-                <HideStatusbar />
-                <Arrays />
-                <Fetch />
-                <JSON />
-                {/* EXAMPLE_USAGE */}
+                <div className="examples-container">
+                    <Examples />
+                </div>
 
                 <BackToToc isVisible={this.state.backToTocVisible} />
 
@@ -62,11 +42,12 @@ export default class App extends Component {
                         font-family: 'Roboto Slab', serif;
                     }
 
-                    h1 {
+                    h1,
+                    h2 {
                         color: #cc99cd;
                     }
 
-                    h2 {
+                    h3 {
                         color: #6196cc;
                     }
 
@@ -80,9 +61,13 @@ export default class App extends Component {
                         margin: 0 auto;
                     }
 
-                    .app > div {
+                    .examples-container > div > div {
                         display: flex;
                         flex-wrap: wrap;
+                    }
+
+                    .toc-container > h2:empty {
+                        display: none;
                     }
 
                     pre[class*='language-'] {
@@ -93,6 +78,7 @@ export default class App extends Component {
                     pre[class*='language-'],
                     code[class*='language-'] {
                         font-family: 'Fira Code', monospace;
+                        font-size: 0.95em;
                     }
 
                     a {
@@ -118,35 +104,15 @@ export default class App extends Component {
     }
 
     componentDidMount() {
-        this.setState({
-            toc: Array.from(document.querySelectorAll('.app > div > h1')).reduce((items, node) => {
-                const text = node.textContent;
-                const id = text.split(' ').join('-');
-
-                node.id = id;
-
-                const item = {
-                    text,
-                    id,
-                };
-
-                return [...items, item];
-            }, []),
-        });
-
         const toc = document.querySelector('.toc-container');
 
         window.addEventListener('scroll', () => {
             requestAnimationFrame(() => {
                 const tocBottom = toc.offsetTop + toc.offsetHeight;
-
                 if (window.scrollY >= tocBottom && !this.state.backToTocVisible) {
-                    console.log('v');
                     this.setState({ backToTocVisible: true });
                 }
-
                 if (window.scrollY < tocBottom && this.state.backToTocVisible) {
-                    console.log('nv');
                     this.setState({ backToTocVisible: false });
                 }
             });

@@ -1,7 +1,5 @@
 import Example from '../components/md/Example';
 
-# Pure Component
-
 <Example reactnative>
 
 ```js
