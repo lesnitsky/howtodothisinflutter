@@ -11,6 +11,8 @@ import AsyncAwait from './async-await.md';
 import PlatformSpecificCode from './platform-specific-code.md';
 import LockOrientation from './lock-orientation.md';
 import LifecycleHooks from './lifecycle-hooks.md';
+import Touchablenativefeedback from './touchablenativefeedback.md';
+import Touchablewithoutfeedback from './touchablewithoutfeedback.md';
 
 <div className="toc-container">
 
@@ -48,6 +50,14 @@ import LifecycleHooks from './lifecycle-hooks.md';
 ## Lifecycle hooks
 
 <LifecycleHooks />
+
+## TouchableNativeFeedback
+
+<Touchablenativefeedback />
+
+## TouchableWithoutFeedback
+
+<Touchablewithoutfeedback />
 
 ## Platform specific code
 
