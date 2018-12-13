@@ -14,7 +14,7 @@ export default () => (
         <small>Many examples are not really specific to React Native or Flutter but rather JavaScript and Dart</small>
 
         <p>
-            You might also waht to check out{' '}
+            You might also want to check out{' '}
             <a href="https://flutter.io/docs/get-started/flutter-for/react-native-devs">
                 flutter for react native devs
             </a>
