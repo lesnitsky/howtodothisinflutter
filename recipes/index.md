@@ -13,6 +13,7 @@ import LockOrientation from './lock-orientation.md';
 import LifecycleHooks from './lifecycle-hooks.md';
 import Touchablenativefeedback from './touchablenativefeedback.md';
 import Touchablewithoutfeedback from './touchablewithoutfeedback.md';
+import Singleton from './singleton.md';
 
 <div className="toc-container">
 
@@ -86,3 +87,7 @@ import Touchablewithoutfeedback from './touchablewithoutfeedback.md';
 ## JSON
 
 <JSON />
+
+## Singleton
+
+<Singleton />
