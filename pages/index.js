@@ -66,6 +66,10 @@ export default class App extends Component {
                         flex-wrap: wrap;
                     }
 
+                    .examples-container > div > div > * {
+                        width: 100%;
+                    }
+
                     .toc-container > h2:empty {
                         display: none;
                     }

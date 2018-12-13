@@ -10,6 +10,7 @@ import RequiredAndDefaultProps from './required-and-default-props.md';
 import AsyncAwait from './async-await.md';
 import PlatformSpecificCode from './platform-specific-code.md';
 import LockOrientation from './lock-orientation.md';
+import LifecycleHooks from './lifecycle-hooks.md';
 
 <div className="toc-container">
 
@@ -43,6 +44,10 @@ import LockOrientation from './lock-orientation.md';
 ## Combining props and state
 
 <CombiningPropsAndState />
+
+## Lifecycle hooks
+
+<LifecycleHooks />
 
 ## Platform specific code
 
