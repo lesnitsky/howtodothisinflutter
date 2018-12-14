@@ -14,6 +14,7 @@ import LifecycleHooks from './lifecycle-hooks.md';
 import Touchablenativefeedback from './touchablenativefeedback.md';
 import Touchablewithoutfeedback from './touchablewithoutfeedback.md';
 import Singleton from './singleton.md';
+import ShowAlert from './show-alert.md';
 
 <div className="toc-container">
 
@@ -71,6 +72,10 @@ import Singleton from './singleton.md';
 ## Lock orientation
 
 <LockOrientation />
+
+## Show alert
+
+<ShowAlert />
 
 ## Arrays
 
