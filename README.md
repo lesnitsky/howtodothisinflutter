@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/lesnitsky/howtodothisinflutter.svg?branch=master)](https://travis-ci.com/lesnitsky/howtodothisinflutter)
 
-📄 Cheet sheet for react native developers.
+📄 Cheat sheet for react native developers.
 
 > Built with [mdx](https://mdxjs.com/) and [nextjs](https://nextjs.org/)
 

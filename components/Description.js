@@ -7,7 +7,7 @@ export default () => (
         </header>
 
         <h2>
-            Cheet sheet for react native developers. <br />
+            Cheat sheet for react native developers. <br />
             Find Flutter alternatives to familiar concepts
         </h2>
 
