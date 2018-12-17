@@ -15,6 +15,9 @@ import Touchablenativefeedback from './touchablenativefeedback.md';
 import Touchablewithoutfeedback from './touchablewithoutfeedback.md';
 import Singleton from './singleton.md';
 import ShowAlert from './show-alert.md';
+import Init from './init.md';
+import Healthcheck from './healthcheck.md';
+import LoadingIndicatorWhileSmthIsLoading from './loading-indicator-while-smth-is-loading.md';
 
 <div className="toc-container">
 
@@ -28,6 +31,14 @@ import ShowAlert from './show-alert.md';
 ##
 
 </div>
+
+## Init
+
+<Init />
+
+## Healthcheck
+
+<Healthcheck />
 
 ## Hello World
 
@@ -60,6 +71,10 @@ import ShowAlert from './show-alert.md';
 ## TouchableWithoutFeedback
 
 <Touchablewithoutfeedback />
+
+## Loading indicator while smth is loading
+
+<LoadingIndicatorWhileSmthIsLoading />
 
 ## Platform specific code
 
