@@ -28,17 +28,11 @@ class Singleton {
 
   final int prop;
 
-  factory Singleton() {
-    if (_instance != null) {
-      return _instance;
-    }
+  factory Singleton() =>
+    _instance ??= new Singleton._internal();
 
-    _instance = new Singleton._internal();
-  }
-
-  Singleton._internal() {
-    prop = 42;
-  }
+  Singleton._internal()
+    : prop = 42;
 }
 ```
 

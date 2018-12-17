@@ -9,7 +9,7 @@ const newItems = items.concat(otherItems);
 
 const allEven = items.every(item => item % 2 == 0);
 
-const filled = items.fill(42);
+const filled = Array(3).fill(42);
 
 const even = items.filter(n => n % 2 === 0);
 
@@ -64,21 +64,21 @@ items.unshift(42);
 ```dart
 final length = items.length;
 
-final newItems = items.addAll(otherItems);
+final newItems = items..addAll(otherItems);
 
 final allEven = items.every((item) => item % 2 == 0);
 
-final filled = new List<int>.filled(3, 42);
+final filled = List<int>.filled(3, 42);
 
-final even = items.where((n) => n % 2 == 0);
+final even = items.where((n) => n % 2 == 0).toList();
 
 final found = items.firstWhere((item) => item.id == 42);
 
-final index = items.findIndex(item => item.id == 42);
+final index = items.indexWhere((item) => item.id == 42);
 
-final flat = items.expand((_) => _);
+final flat = items.expand((_) => _).toList();
 
-final mapped = items.expand((item) => item + 1);
+final mapped = items.expand((item) => [item + 1]).toList();
 
 items.forEach((item) => print(item));
 
@@ -90,13 +90,13 @@ final indexOf = items.indexOf(42);
 
 final joined = items.join(',');
 
-final newItems = items.map((item) => item + 1);
+final newItems = items.map((item) => item + 1).toList();
 
 final item = items.removeLast();
 
 items.add(42);
 
-final reduced = items.fold({}, (acc, item) => {
+final reduced = items.fold({}, (acc, item) {
   acc[item.id] = item;
   return acc;
 });

@@ -21,8 +21,6 @@ class SomeClass {
 <Example flutter>
 
 ```dart
-import 'dart:async';
-
 Future<int> doSmthAsync() async {
   final result = await Future.value(42);
   return result;
