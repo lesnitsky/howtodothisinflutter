@@ -6,6 +6,10 @@ export default class MyDocument extends Document {
             <html>
                 <Head>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                    <link
+                        rel="shortcut icon"
+                        href="https://gitcdn.xyz/repo/flutter/flutter/master/dev/docs/favicon.ico"
+                    />
                     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130596321-1" />
                     <script
                         dangerouslySetInnerHTML={{
