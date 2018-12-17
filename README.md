@@ -8,7 +8,7 @@
 
 ## Motivation
 
-As a react native dev I found Flutter really similar to react native in many ways ([flutter for react native devs](https://flutter.io/docs/get-started/flutter-for/react-native-devs)). However when I first tried Flutter, turned out that doing simple things like fetchng data from back-end or building statefull component is not as straightforward as in React Native (actually it _is_ straightforward after the first time :smirk:)
+As a react native dev I found Flutter really similar to react native in many ways ([flutter for react native devs](https://flutter.io/docs/get-started/flutter-for/react-native-devs)). However when I first tried Flutter, turned out that doing simple things like fetchng data from back-end or building stateful component is not as straightforward as in React Native (actually it _is_ straightforward after the first time :smirk:)
 
 Example:
 
