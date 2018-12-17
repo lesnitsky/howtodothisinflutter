@@ -56,6 +56,13 @@ export default class App extends Component {
                         width: 100%;
                     }
 
+                    blockquote {
+                        border-left: 2px dotted gray;
+                        margin: 0;
+                        padding: 0 1em;
+                        color: gray;
+                    }
+
                     .app {
                         width: 90%;
                         margin: 0 auto;

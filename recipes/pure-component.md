@@ -20,6 +20,8 @@ class Greeter extends React.PureComponent<Props, {}> {
 }
 ```
 
+> PureComponent in react still can have state, but that's not the case for Flutter
+
 </Example>
 
 <Example flutter>
