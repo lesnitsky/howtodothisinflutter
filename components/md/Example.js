@@ -23,6 +23,10 @@ export default ({ children, reactnative, flutter }) => (
                     max-width: 100%;
                     padding: 0;
                 }
+
+                .example-container + .example-container {
+                    padding: 0;
+                }
             }
         `}</style>
     </div>
