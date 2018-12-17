@@ -47,6 +47,10 @@ export default () => (
                 height: 28px;
             }
 
+            .github-button-container > a {
+                visibility: hidden;
+            }
+
             h1 {
                 width: auto;
                 font-size: 2em;
