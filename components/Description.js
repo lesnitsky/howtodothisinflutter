@@ -4,6 +4,19 @@ export default () => (
     <section>
         <header>
             <h1>How to do this in Flutter?</h1>
+
+            <div className="github-button-container">
+                <a
+                    className="github-button"
+                    href="https://github.com/lesnitsky/howtodothisinflutter"
+                    data-icon="octicon-star"
+                    data-size="large"
+                    data-show-count="true"
+                    aria-label="Star lesnitsky/howtodothisinflutter on GitHub"
+                >
+                    Star
+                </a>
+            </div>
         </header>
 
         <h2>
@@ -23,13 +36,27 @@ export default () => (
         <Footer />
 
         <style jsx>{`
+            header {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .github-button-container {
+                line-height: 1em;
+                height: 28px;
+            }
+
             h1 {
+                width: auto;
                 font-size: 2em;
+                margin-right: 0.5em;
             }
 
             h2 {
                 font-size: 1.2em;
                 color: white;
+                margin-top: 1.5em;
             }
 
             section {
