@@ -9,11 +9,15 @@ type Props = {
   name: string,
 };
 
-const Greeter = ({ name }: Props) => (
-  <View>
-    <Text>Hello, {name}</Text>
-  </View>
-);
+class Greeter extends React.PureComponent<Props> {
+  render() {
+    return (
+      <View>
+        <Text>Hello, {this.props.name}</Text>
+      </View>
+    );
+  }
+}
 ```
 
 </Example>
