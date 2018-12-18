@@ -27,7 +27,7 @@ items.forEach((item, index) => console.log(item, index));
 
 const includes = items.includes(42);
 
-const indexOf = items.indexOf(item => item === itemToFind);
+const indexOf = items.indexOf(item => item === 42);
 
 const joined = items.join(',');
 
