@@ -49,9 +49,9 @@ class _MyComponentState extends State<MyComponent> {
   @override
   void didUpdateWidget(MyComponent oldWidget) {
     // this method IS called when parent widget passed new "props"
-    // unlike React this method IS callled _before_ the build
-    // unlike React method receives OLD "props"
-    // unlike React this method ISN'T called after setState()
+    // unlike React, this method IS called _before_ the build
+    // unlike React, this method receives OLD "props"
+    // unlike React, this method ISN'T called after setState()
     super.didUpdateWidget(oldWidget);
   }
 
