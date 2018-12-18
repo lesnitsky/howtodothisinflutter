@@ -12,7 +12,7 @@ JSON.stringify(someString);
 <Example flutter>
 
 ```dart
-import 'dart:convert';
+import 'dart:convert' show json;
 
 json.decode(someString);
 json.encode(encodableObject);
