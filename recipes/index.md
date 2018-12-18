@@ -72,7 +72,7 @@ import LoadingIndicatorWhileSmthIsLoading from './loading-indicator-while-smth-i
 
 <Touchablewithoutfeedback />
 
-## Loading indicator while smth is loading
+## Loading indicator while something is loading
 
 <LoadingIndicatorWhileSmthIsLoading />
 
