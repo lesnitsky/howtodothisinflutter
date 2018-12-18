@@ -18,7 +18,7 @@ dependencies:
 ```
 
 ```dart
-import 'dart:convert'; // json
+import 'dart:convert' show json;
 import 'package:http/http.dart' as http;
 
 http.get(API_URL).then((http.Response res) {
