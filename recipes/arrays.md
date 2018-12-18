@@ -42,7 +42,7 @@ const reduced = items.reduce((acc, item) => {
   return acc;
 }, {});
 
-items.reverse();
+const reversed = items.reverse();
 
 items.shift();
 
