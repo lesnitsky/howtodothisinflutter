@@ -9,18 +9,12 @@ type Props = {
   name: string,
 };
 
-class Greeter extends React.PureComponent<Props, {}> {
-  render() {
-    return (
-      <View>
-        <Text>Hello, {this.props.name}</Text>
-      </View>
-    );
-  }
-}
+const Greeter = props => (
+  <View>
+    <Text>Hello, {props.name}</Text>
+  </View>
+);
 ```
-
-> PureComponent in react still can have state, but that's not the case for Flutter
 
 </Example>
 

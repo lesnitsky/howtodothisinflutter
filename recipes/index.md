@@ -2,7 +2,7 @@ import HelloWorld from './hello-world.md';
 import Fetch from './fetch.md';
 import JSON from './json.md';
 import StatefulComponent from './stateful-component.md';
-import PureComponent from './pure-component.md';
+import StatelessComponent from './stateless-component.md';
 import Arrays from './arrays.md';
 import HideStatusbar from './hide-statusbar.md';
 import CombiningPropsAndState from './combining-props-and-state.md';
@@ -44,9 +44,9 @@ import LoadingIndicatorWhileSmthIsLoading from './loading-indicator-while-smth-i
 
 <HelloWorld />
 
-## Pure Component
+## Stateless Component
 
-<PureComponent />
+<StatelessComponent />
 
 ## Required and default props
 
