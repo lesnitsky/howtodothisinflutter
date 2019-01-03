@@ -21,7 +21,9 @@ class SomeComponent extends React.Component<Props, State> {
   render() {
     return (
       <View>
-        {this.state.count} {this.prop.fruit}
+        <Text>
+          {this.state.count} {this.prop.fruit}
+        </Text>
       </View>
     );
   }
