@@ -24,7 +24,7 @@ class Singleton {
 
 ```dart
 class Singleton {
-  static final Singleton _instance;
+  static Singleton _instance;
 
   final int prop;
 
