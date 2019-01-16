@@ -18,6 +18,7 @@ import ShowAlert from './show-alert.md';
 import Init from './init.md';
 import Healthcheck from './healthcheck.md';
 import LoadingIndicatorWhileSmthIsLoading from './loading-indicator-while-smth-is-loading.md';
+import Navigation from './navigation.md';
 
 <div className="toc-container">
 
@@ -111,3 +112,7 @@ import LoadingIndicatorWhileSmthIsLoading from './loading-indicator-while-smth-i
 ## Singleton
 
 <Singleton />
+
+## Navigation
+
+<Navigation />
