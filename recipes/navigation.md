@@ -7,28 +7,6 @@ import React from 'react';
 import { Button, View, Text, StyleSheet } from 'react-native';
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
-const RootStack = createStackNavigator(
-    {
-      First: {
-        screen: FirstScreen,
-      },
-      Second: {
-        screen: SecondScreen,
-      },
-    },
-    {
-      initialRouteName: 'First',
-    }
-  );
-
-  const AppContainer = createAppContainer(RootStack);
-
-  export default class App extends React.Component {
-    render() {
-      return <AppContainer />;
-    }
-  }
-
 class FirstScreen extends React.Component {
   render() {
     return (
@@ -64,6 +42,28 @@ class SecondScreen extends React.Component {
 const styles = StyleSheet.create({
     container: { flex: 1, alignItems: 'center', justifyContent: 'center' }
 })
+
+const RootStack = createStackNavigator(
+    {
+      First: {
+        screen: FirstScreen,
+      },
+      Second: {
+        screen: SecondScreen,
+      },
+    },
+    {
+      initialRouteName: 'First',
+    }
+  );
+
+  const AppContainer = createAppContainer(RootStack);
+
+  export default class App extends React.Component {
+    render() {
+      return <AppContainer />;
+    }
+  }
 ```
 
 </Example>
@@ -123,7 +123,7 @@ class SecondScreen extends StatelessWidget {
 
 void main() {
   runApp(MaterialApp(
-    title: 'Named Routes Demo',
+    title: 'Navigation Flutter',
     initialRoute: '/',
     routes: {
       '/': (context) => FirstScreen(),
