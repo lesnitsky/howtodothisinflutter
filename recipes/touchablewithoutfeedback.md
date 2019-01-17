@@ -4,7 +4,7 @@ import Example from '../components/md/Example';
 
 ```js
 <TouchableWithoutFeedback
-  onPress={_onPress_}
+  onPress={_onPress}
   onLongPress={_onLongPress}
 >
   <Text>Button</Text>
