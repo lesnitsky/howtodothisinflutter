@@ -2,44 +2,44 @@ import Example from '../components/md/Example';
 
 <Example reactnative>
 
+npm i react-navigation react-native-gesture-handler --save
+
 ```js
-// Required packages: react-navigation, react-native-gesture-handler.
 import React from 'react';
-import { Button, View, Text, StyleSheet } from 'react-native';
+import { Button, View } from 'react-native';
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
-function FirstScreen(props) {
-  return (
-    <View>
-      <Button title="Go to SecondScreen"
-        onPress={() => props.navigation.navigate('Second')}
-      />
-    </View>
-  );
-}
+const FirstScreen = props => (
+  <View>
+    <Button
+      title="Go to SecondScreen"
+      onPress={() => props.navigation.navigate('Second')}
+    />
+  </View>
+);
 
-function SecondScreen(props) {
-  return (
-    <View>
-      <Button title="Go back!"
-        onPress={props.navigation.goBack}
-      />
-      <Button title="Go to Second... again"
-        onPress={() => props.navigation.push('Second')}
-      />
-    </View>
-  );
-}
+const SecondScreen = props => (
+  <View>
+    <Button
+      title="Go back!"
+      onPress={props.navigation.goBack} />
+
+    <Button
+      title="Go to SecondScreen... again"
+      onPress={() => props.navigation.push('Second')}
+    />
+  </View>
+);
 
 const RootStack = createStackNavigator({
-    First: { screen: FirstScreen },
-    Second: { screen: SecondScreen },
+  First: { screen: FirstScreen },
+  Second: { screen: SecondScreen },
   },{
-    initialRouteName: 'First'
-  });
+    initialRouteName: 'First',
+});
 
 const AppContainer = createAppContainer(RootStack);
-const App = () => <AppContainer />
+const App = () => <AppContainer />;
 ```
 
 </Example>
@@ -62,7 +62,7 @@ class FirstScreen extends StatelessWidget {
 }
 
 class SecondScreen extends StatelessWidget {
-  void _pushSecondScreen(BuildContext context) {
+  void _pushSecondScreen(context) {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => SecondScreen()));
   }
@@ -74,7 +74,7 @@ class SecondScreen extends StatelessWidget {
         RaisedButton(
             child: Text('Go back!'), onPressed: () => Navigator.pop(context)),
         RaisedButton(
-            child: Text('Go to Second... again!'),
+            child: Text('Go to SecondScreen... again!'),
             onPressed: () => _pushSecondScreen(context)),
       ],
     );
