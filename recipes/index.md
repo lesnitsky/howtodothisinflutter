@@ -93,6 +93,10 @@ import Navigation from './navigation.md';
 
 <ShowAlert />
 
+## Navigation
+
+<Navigation />
+
 ## Arrays
 
 <Arrays />
@@ -112,7 +116,3 @@ import Navigation from './navigation.md';
 ## Singleton
 
 <Singleton />
-
-## Navigation
-
-<Navigation />

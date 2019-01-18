@@ -2,12 +2,17 @@ import Example from '../components/md/Example';
 
 <Example reactnative>
 
+```bash
 npm i react-navigation react-native-gesture-handler --save
+```
 
 ```js
 import React from 'react';
 import { Button, View } from 'react-native';
-import { createAppContainer, createStackNavigator } from 'react-navigation';
+import {
+  createAppContainer,
+  createStackNavigator,
+} from 'react-navigation';
 
 const FirstScreen = props => (
   <View>
@@ -20,9 +25,7 @@ const FirstScreen = props => (
 
 const SecondScreen = props => (
   <View>
-    <Button
-      title="Go back!"
-      onPress={props.navigation.goBack} />
+    <Button title="Go back!" onPress={props.navigation.goBack} />
 
     <Button
       title="Go to SecondScreen... again"
@@ -31,12 +34,15 @@ const SecondScreen = props => (
   </View>
 );
 
-const RootStack = createStackNavigator({
-  First: { screen: FirstScreen },
-  Second: { screen: SecondScreen },
-  },{
+const RootStack = createStackNavigator(
+  {
+    First: { screen: FirstScreen },
+    Second: { screen: SecondScreen },
+  },
+  {
     initialRouteName: 'First',
-});
+  }
+);
 
 const AppContainer = createAppContainer(RootStack);
 const App = () => <AppContainer />;
@@ -63,8 +69,7 @@ class FirstScreen extends StatelessWidget {
 
 class SecondScreen extends StatelessWidget {
   void _pushSecondScreen(context) {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => SecondScreen()));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => SecondScreen()));
   }
 
   @override
@@ -72,10 +77,13 @@ class SecondScreen extends StatelessWidget {
     return Column(
       children: <Widget>[
         RaisedButton(
-            child: Text('Go back!'), onPressed: () => Navigator.pop(context)),
+          child: Text('Go back!'),
+          onPressed: () => Navigator.pop(context),
+        ),
         RaisedButton(
-            child: Text('Go to SecondScreen... again!'),
-            onPressed: () => _pushSecondScreen(context)),
+          child: Text('Go to SecondScreen... again!'),
+          onPressed: () => _pushSecondScreen(context),
+        ),
       ],
     );
   }
@@ -87,7 +95,8 @@ void main() {
     routes: {
       '/': (context) => FirstScreen(),
       '/second': (context) => SecondScreen(),
-  }));
+    },
+  ));
 }
 ```
 
