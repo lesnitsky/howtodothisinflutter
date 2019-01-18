@@ -86,6 +86,15 @@ export default class App extends Component {
                         margin-bottom: 20px;
                     }
 
+                    code {
+                        background: #2d2d2d;
+                        padding: 0.5em;
+                    }
+
+                    code[class*='language-'] {
+                        padding: 0;
+                    }
+
                     pre[class*='language-'],
                     code[class*='language-'] {
                         font-family: 'Fira Code', monospace;
