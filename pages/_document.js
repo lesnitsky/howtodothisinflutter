@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
             <html>
                 <Head>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                    <meta name="description" content="How to do this in Flutter? Cheat sheet for React Native developers trying Flutter. Find Flutter alternatives for familliar concepts" />
                     <link
                         rel="shortcut icon"
                         href="https://gitcdn.xyz/repo/flutter/flutter/master/dev/docs/favicon.ico"
