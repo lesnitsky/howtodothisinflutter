@@ -4,7 +4,7 @@ import Example from '../components/md/Example';
 
 ```js
 <TouchableNativeFeedback
-  onPress={_onPress_}
+  onPress={_onPress}
   onLongPress={_onLongPress}
 >
   <Text>Button</Text>
