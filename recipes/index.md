@@ -19,6 +19,7 @@ import Init from './init.md';
 import Healthcheck from './healthcheck.md';
 import LoadingIndicatorWhileSmthIsLoading from './loading-indicator-while-smth-is-loading.md';
 import Navigation from './navigation.md';
+import Debounce from './debounce.md';
 
 <div className="toc-container">
 
@@ -116,3 +117,7 @@ import Navigation from './navigation.md';
 ## Singleton
 
 <Singleton />
+
+## Debounce
+
+<Debounce />
