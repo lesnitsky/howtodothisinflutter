@@ -64,10 +64,16 @@ How to contribute new examples:
 -   👀 make sure example you want to add doesn't already exist
 -   🛠 run `yarn add-example`
 -   ✍️ edit `recipes/<your-example-name>.md`
--   ➕ add your name to `CONTRIBUTORS.md`
+-   ➕ add your name to [Contributors](#contributors) section
 -   📦 commit your changes
 -   ⤴️ create Pull Request
 -   👍 kudos
+
+# Contributors
+
+-   [Andrei Lesnitsky](https://twitter.com/lesnitsky_a)
+-   [Vyacheslav Egorov](https://twitter.com/mraleph)
+-   [Tiago Almeida](https://twitter.com/TiagoHenriq)
 
 ## License
 
