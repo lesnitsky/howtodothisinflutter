@@ -20,6 +20,7 @@ import Healthcheck from './healthcheck.md';
 import LoadingIndicatorWhileSmthIsLoading from './loading-indicator-while-smth-is-loading.md';
 import Navigation from './navigation.md';
 import Debounce from './debounce.md';
+import CheckIfDev from './check-if-dev.md';
 
 <div className="toc-container">
 
@@ -93,6 +94,10 @@ import Debounce from './debounce.md';
 ## Show alert
 
 <ShowAlert />
+
+## Check if dev
+
+<CheckIfDev />
 
 ## Navigation
 
