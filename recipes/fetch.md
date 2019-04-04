@@ -12,20 +12,22 @@ fetch(API_URL)
 
 <Example flutter>
 
-```yaml
-dependencies:
-  http: ^0.12.0
-```
 
 ```dart
-import 'dart:convert' show json;
-import 'package:http/http.dart' as http;
+import 'dart:io';
+import 'dart:convert';
 
-http.get(API_URL).then((http.Response res) {
-    final data = json.decode(res.body);
-    print(data);
-});
+void main() async {
+  // Produces a request object
+  var request = await HttpClient().getUrl(Uri.parse(API_URL));
+  // Sends the request
+  var response = await request.close(); 
 
+  // Transforms and prints the response
+  await for (var contents in response.transform(Utf8Decoder())) {
+    print(contents);
+  }
+}
 ```
 
 </Example>
