@@ -64,7 +64,7 @@ items.unshift(42);
 ```dart
 final length = items.length;
 
-final newItems = items..addAll(otherItems);
+final newItems = items.addAll(otherItems);
 
 final allEven = items.every((item) => item % 2 == 0);
 
