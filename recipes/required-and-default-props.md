@@ -31,7 +31,7 @@ import 'package:flutter/material.dart';
 class SomeComponent extends StatelessWidget {
   SomeComponent({
     @required this.foo,
-    this.bar = 'some string',
+    this.bar : 'some string',
   });
 
   final String foo;
