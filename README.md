@@ -2,6 +2,11 @@
 
 [![Build Status](https://travis-ci.com/lesnitsky/howtodothisinflutter.svg?branch=master)](https://travis-ci.com/lesnitsky/howtodothisinflutter)
 
+> Support me
+
+![GitHub stars](https://img.shields.io/github/stars/lesnitsky/howtodothisinflutter.svg?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/lesnitsky_a.svg?label=Follow%20me&style=social)
+
 📄 Cheat sheet for react native developers.
 
 > Built with [mdx](https://mdxjs.com/) and [nextjs](https://nextjs.org/)
@@ -78,3 +83,8 @@ How to contribute new examples:
 ## License
 
 MIT © [Andrei Lesnitsky](https://twitter.com/lesnitsky_a)
+
+## Support me
+
+![GitHub stars](https://img.shields.io/github/stars/lesnitsky/howtodothisinflutter.svg?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/lesnitsky_a.svg?label=Follow%20me&style=social)
