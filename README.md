@@ -2,10 +2,8 @@
 
 [![Build Status](https://travis-ci.com/lesnitsky/howtodothisinflutter.svg?branch=master)](https://travis-ci.com/lesnitsky/howtodothisinflutter)
 
-> Support me
-
-![GitHub stars](https://img.shields.io/github/stars/lesnitsky/howtodothisinflutter.svg?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/lesnitsky_a.svg?label=Follow%20me&style=social)
+[![GitHub stars](https://img.shields.io/github/stars/lesnitsky/howtodothisinflutter.svg?style=social)](https://github.com/lesnitsky/howtodothisinflutter)
+[![Twitter Follow](https://img.shields.io/twitter/follow/lesnitsky_a.svg?label=Follow%20me&style=social)](https://twitter.com/lesnitsky_a)
 
 📄 Cheat sheet for react native developers.
 
@@ -84,7 +82,6 @@ How to contribute new examples:
 
 MIT © [Andrei Lesnitsky](https://twitter.com/lesnitsky_a)
 
-## Support me
 
-![GitHub stars](https://img.shields.io/github/stars/lesnitsky/howtodothisinflutter.svg?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/lesnitsky_a.svg?label=Follow%20me&style=social)
+[![GitHub stars](https://img.shields.io/github/stars/lesnitsky/howtodothisinflutter.svg?style=social)](https://github.com/lesnitsky/howtodothisinflutter)
+[![Twitter Follow](https://img.shields.io/twitter/follow/lesnitsky_a.svg?label=Follow%20me&style=social)](https://twitter.com/lesnitsky_a)
