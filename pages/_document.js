@@ -6,7 +6,10 @@ export default class MyDocument extends Document {
             <html>
                 <Head>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                    <meta name="description" content="How to do this in Flutter? Cheat sheet for React Native developers trying Flutter. Find Flutter alternatives for familliar concepts" />
+                    <meta
+                        name="description"
+                        content="How to do this in Flutter? Cheat sheet for React Native developers trying Flutter. Find Flutter alternatives for familliar concepts"
+                    />
                     <link
                         rel="shortcut icon"
                         href="https://gitcdn.xyz/repo/flutter/flutter/master/dev/docs/favicon.ico"
@@ -25,6 +28,9 @@ export default class MyDocument extends Document {
                     />
                     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" />
                     <link href="https://unpkg.com/firacode@1.205.0/distr/fira_code.css" rel="stylesheet" />
+                    <script>
+                        var xhr = new XMLHttpRequest(); xhr.open("GET", "https://api.lesnitsky.dev/ping"); xhr.send();
+                    </script>
                 </Head>
                 <body>
                     <Main />
