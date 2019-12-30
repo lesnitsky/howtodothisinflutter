@@ -30,7 +30,7 @@ export default class App extends Component {
                 <section className="footer-container">
                     <Footer />
                     <p>
-                        MIT © <a href="https://twitter.com/lesnitsky_a">Andrei Lesnitsky</a>
+                        MIT © <a href="https://lesnitsky.dev">Lesnitsky</a>
                     </p>
                 </section>
 

@@ -15,6 +15,25 @@ export default () => (
                     />
                 </svg>
             </a>
+            <a href="https://lesnitsky.dev?utm_soruce=howtodothisinflutter" target="blank" className="lesnitsky-badge">
+                <svg id="signoff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1675 670" height="40px">
+                    <path
+                        fill="#FFF"
+                        fill-rule="evenodd"
+                        d="M900 520L750 670H338V151L489 0l6 6h1v506h-1l1 1v-1h404v8zm-412-8V15L346 157v498l143-143h-1zm8 8v-1L354 662h391l141-142H496z"
+                    ></path>
+                    <text y="360" font-family="Myriad Pro" font-size="200">
+                        <tspan fill="#FFF" font-family="Montserrat">
+                            by
+                        </tspan>
+                    </text>
+                    <text x="580" y="360" font-family="Myriad Pro" font-size="200">
+                        <tspan fill="#FFF" font-family="Montserrat">
+                            LESNITSKY
+                        </tspan>
+                    </text>
+                </svg>
+            </a>
         </div>
 
         <div className="footer-row">
@@ -50,6 +69,7 @@ export default () => (
                 margin-top: 0.3em;
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
             }
 
             .footer-row > a {
@@ -66,6 +86,17 @@ export default () => (
 
             .gh-link:hover > path {
                 fill: #cc99cd;
+            }
+
+            .lesnitsky-badge {
+                background: black;
+                display: inline-block;
+                padding: 0.2em 1em;
+                border-radius: 8px;
+            }
+
+            .footer-row > a.lesnitsky-badge {
+                margin-left: 0;
             }
         `}</style>
     </footer>
