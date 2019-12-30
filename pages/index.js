@@ -16,7 +16,7 @@ export default class App extends Component {
         return (
             <div className="app">
                 <Head>
-                    <title>How to do this in Flutter?</title>
+                    <title>Flutter cheat sheet</title>
                 </Head>
 
                 <Description />
