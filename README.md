@@ -1,7 +1,7 @@
 # How to do this in Flutter?
 
+[![lesnitsky.dev](https://lesnitsky.dev/icons/shield.svg?hash=42)](https://lesnitsky.dev?utm_source=howtodothisinflutter_repo)
 [![Build Status](https://travis-ci.com/lesnitsky/howtodothisinflutter.svg?branch=master)](https://travis-ci.com/lesnitsky/howtodothisinflutter)
-
 [![GitHub stars](https://img.shields.io/github/stars/lesnitsky/howtodothisinflutter.svg?style=social)](https://github.com/lesnitsky/howtodothisinflutter)
 [![Twitter Follow](https://img.shields.io/twitter/follow/lesnitsky_a.svg?label=Follow%20me&style=social)](https://twitter.com/lesnitsky_a)
 
@@ -40,5 +40,6 @@ How to contribute new examples:
 
 MIT © [Andrei Lesnitsky](https://lesnitsky.dev)
 
+[![lesnitsky.dev](https://lesnitsky.dev/icons/shield.svg?hash=42)](https://lesnitsky.dev?utm_source=howtodothisinflutter_repo)
 [![GitHub stars](https://img.shields.io/github/stars/lesnitsky/howtodothisinflutter.svg?style=social)](https://github.com/lesnitsky/howtodothisinflutter)
 [![Twitter Follow](https://img.shields.io/twitter/follow/lesnitsky_a.svg?label=Follow%20me&style=social)](https://twitter.com/lesnitsky_a)
