@@ -19,7 +19,7 @@ export default () => (
                 <svg id="signoff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1675 670" height="40px">
                     <path
                         fill="#FFF"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M900 520L750 670H338V151L489 0l6 6h1v506h-1l1 1v-1h404v8zm-412-8V15L346 157v498l143-143h-1zm8 8v-1L354 662h391l141-142H496z"
                     ></path>
                     <text y="360" fontFamily="Myriad Pro" fontSize="200">
