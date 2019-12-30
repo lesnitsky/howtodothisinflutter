@@ -1,55 +1,5 @@
 import Example from '../components/md/Example';
 
-<Example reactnative>
-
-```bash
-npm i react-navigation react-native-gesture-handler --save
-```
-
-```js
-import React from 'react';
-import { Button, View } from 'react-native';
-import {
-  createAppContainer,
-  createStackNavigator,
-} from 'react-navigation';
-
-const FirstScreen = props => (
-  <View>
-    <Button
-      title="Go to SecondScreen"
-      onPress={() => props.navigation.navigate('Second')}
-    />
-  </View>
-);
-
-const SecondScreen = props => (
-  <View>
-    <Button title="Go back!" onPress={props.navigation.goBack} />
-
-    <Button
-      title="Go to SecondScreen... again"
-      onPress={() => props.navigation.push('Second')}
-    />
-  </View>
-);
-
-const RootStack = createStackNavigator(
-  {
-    First: { screen: FirstScreen },
-    Second: { screen: SecondScreen },
-  },
-  {
-    initialRouteName: 'First',
-  }
-);
-
-const AppContainer = createAppContainer(RootStack);
-const App = () => <AppContainer />;
-```
-
-</Example>
-
 <Example flutter>
 
 ```dart

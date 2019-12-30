@@ -1,43 +1,5 @@
 import Example from '../components/md/Example';
 
-<Example reactnative>
-
-```js
-import React from 'react';
-
-type Props = {
-  fruit: string,
-};
-
-type State = {
-  count: number,
-};
-
-class SomeComponent extends React.Component<Props, State> {
-  state = {
-    count: 0,
-  };
-
-  render() {
-    return (
-      <View>
-        <Text>
-          {this.state.count} {this.prop.fruit}
-        </Text>
-      </View>
-    );
-  }
-}
-
-const ParentComponent = () => (
-  <View>
-    <SomeComponent fruit="oranges" />
-  </View>
-);
-```
-
-</Example>
-
 <Example flutter>
 
 ```dart

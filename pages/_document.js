@@ -6,9 +6,10 @@ export default class MyDocument extends Document {
             <html>
                 <Head>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                    <meta name="description" content="Flutter cheat sheet" />
                     <meta
-                        name="description"
-                        content="How to do this in Flutter? Cheat sheet for React Native developers trying Flutter. Find Flutter alternatives for familliar concepts"
+                        name="tags"
+                        content="flutter, cheatsheet, props, hide status bar, didUpdateWidget, debounce, singleton"
                     />
                     <link
                         rel="shortcut icon"

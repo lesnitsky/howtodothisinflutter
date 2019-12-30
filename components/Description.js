@@ -20,18 +20,9 @@ export default () => (
         </header>
 
         <h2>
-            Cheat sheet for react native developers. <br />
-            Find Flutter alternatives to familiar concepts
+            Flutter and dart cheat sheet
+            <br />
         </h2>
-
-        <small>Many examples are not really specific to React Native or Flutter but rather JavaScript and Dart</small>
-
-        <p>
-            You might also want to check out{' '}
-            <a href="https://flutter.io/docs/get-started/flutter-for/react-native-devs">
-                flutter for react native devs
-            </a>
-        </p>
 
         <Footer />
 

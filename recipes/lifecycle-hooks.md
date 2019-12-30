@@ -1,61 +1,30 @@
 import Example from '../components/md/Example';
 
-There are _some_ similarities between lifecycle hooks in react native and Flutter, but _do not treat them as 100% the same thing_. Find more info here:
-
-- [initState](https://docs.flutter.io/flutter/widgets/State/initState.html)
-- [didChangeDependencies](https://docs.flutter.io/flutter/widgets/State/didChangeDependencies.html)
-- [didUpdateWidget](https://docs.flutter.io/flutter/widgets/State/didChangeDependencies.html)
-- [dispose](https://docs.flutter.io/flutter/widgets/State/dispose.html)
-
-<Example reactnative>
-
-```js
-class MyComponent extends React.Component<{}, {}> {
-  //
-  componentDidMount() {
-    //
-    // some code here
-    //
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    //
-    // some code here
-    //
-    //
-  }
-
-  //
-  componentWillUnmount() {
-    // some code here
-    //
-  }
-}
-```
-
-</Example>
-
 <Example flutter>
 
 ```dart
 class _MyComponentState extends State<MyComponent> {
   @override
   void initState() {
-    // unlike React this method is called _before_ the build
+    // this method is called before the first build
     super.initState();
   }
 
   @override
   void didUpdateWidget(MyComponent oldWidget) {
-    // this method IS called when parent widget passes new "props"
-    // unlike React, this method IS called _before_ the build
-    // unlike React, this method ISN'T called after setState()
+    // this method IS called when parent widget is rebuilt
     super.didUpdateWidget(oldWidget);
+  }
+
+  @override didChangeDependencies() {
+    // called when InheritedWidget updates
+    // read more here https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html
+    super.didChangeDependencies();
   }
 
   @override
   void dispose() {
-    // some code here
+    // called after widget was unmounted from widget tree
     super.dispose();
   }
 }

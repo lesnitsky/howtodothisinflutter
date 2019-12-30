@@ -1,15 +1,5 @@
 import Example from '../components/md/Example';
 
-<Example reactnative>
-
-```js
-fetch(API_URL)
-  .then(res => res.json())
-  .then(console.log);
-```
-
-</Example>
-
 <Example flutter>
 
 ```yaml

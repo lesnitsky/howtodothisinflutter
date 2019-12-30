@@ -1,19 +1,5 @@
 import Example from '../components/md/Example';
 
-<Example reactnative>
-
-```bash
-npm i lodash.debounce --save
-```
-
-```js
-import debounce from 'lodash.debounce';
-
-debounce(someFN, 500);
-```
-
-</Example>
-
 <Example flutter>
 
 ```dart

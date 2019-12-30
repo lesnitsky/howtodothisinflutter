@@ -1,8 +1,8 @@
 import HelloWorld from './hello-world.md';
 import Fetch from './fetch.md';
 import JSON from './json.md';
-import StatefulComponent from './stateful-component.md';
-import StatelessComponent from './stateless-component.md';
+import StatefulWidget from './stateful-widget.md';
+import StatelessWidget from './stateless-widget.md';
 import Arrays from './arrays.md';
 import HideStatusbar from './hide-statusbar.md';
 import CombiningPropsAndState from './combining-props-and-state.md';
@@ -11,8 +11,8 @@ import AsyncAwait from './async-await.md';
 import PlatformSpecificCode from './platform-specific-code.md';
 import LockOrientation from './lock-orientation.md';
 import LifecycleHooks from './lifecycle-hooks.md';
-import Touchablenativefeedback from './touchablenativefeedback.md';
-import Touchablewithoutfeedback from './touchablewithoutfeedback.md';
+import InkWell from './ink-well.md';
+import GestureDetector from './gesture-detector.md';
 import Singleton from './singleton.md';
 import ShowAlert from './show-alert.md';
 import Init from './init.md';
@@ -47,17 +47,17 @@ import CheckIfDev from './check-if-dev.md';
 
 <HelloWorld />
 
-## Stateless Component
+## Stateless Widget
 
-<StatelessComponent />
+<StatelessWidget />
 
 ## Required and default props
 
 <RequiredAndDefaultProps />
 
-## Stateful component
+## Stateful Widget
 
-<StatefulComponent />
+<StatefulWidget />
 
 ## Combining props and state
 
@@ -67,15 +67,15 @@ import CheckIfDev from './check-if-dev.md';
 
 <LifecycleHooks />
 
-## TouchableNativeFeedback
+## Android Ink effect
 
-<Touchablenativefeedback />
+<InkWell />
 
-## TouchableWithoutFeedback
+## Detecting Gestures
 
-<Touchablewithoutfeedback />
+<GestureDetector />
 
-## Loading indicator while something is loading
+## Loading indicator
 
 <LoadingIndicatorWhileSmthIsLoading />
 
@@ -107,7 +107,7 @@ import CheckIfDev from './check-if-dev.md';
 
 <Arrays />
 
-## Fetch
+## Make http request
 
 <Fetch />
 

@@ -1,23 +1,5 @@
 import Example from '../components/md/Example';
 
-<Example reactnative>
-
-```js
-async function doSmthAsync() {
-  const result = await Promise.resolve(42);
-  return result;
-}
-
-class SomeClass {
-  async method() {
-    const result = await Promise.resolve(42);
-    return result;
-  }
-}
-```
-
-</Example>
-
 <Example flutter>
 
 ```dart

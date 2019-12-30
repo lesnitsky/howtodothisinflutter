@@ -1,15 +1,5 @@
 import Example from '../components/md/Example';
 
-<Example reactnative>
-
-```js
-if (__DEV__) {
-  doSmth();
-}
-```
-
-</Example>
-
 <Example flutter>
 
 ```dart

@@ -1,25 +1,5 @@
 import Example from '../components/md/Example';
 
-<Example reactnative>
-
-```js
-class Singleton {
-  static _instance;
-
-  constructor() {
-    if (Singleton._instance) {
-      return Singleton._instance;
-    }
-
-    this.prop = 42;
-
-    Singleton._instance = this;
-  }
-}
-```
-
-</Example>
-
 <Example flutter>
 
 ```dart

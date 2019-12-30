@@ -1,28 +1,5 @@
 import Example from '../components/md/Example';
 
-<Example reactnative>
-
-```js
-import React from 'react';
-
-type Props = {
-  foo: string,
-  bar?: string,
-};
-
-const SomeComponent = (props: Props) => (
-  <View>
-    <Text>{`${props.foo} ${props.bar}`}</Text>
-  </View>
-);
-
-SomeComponent.defaultProps = {
-  bar: 'some string',
-};
-```
-
-</Example>
-
 <Example flutter>
 
 ```dart

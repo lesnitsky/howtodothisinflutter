@@ -22,13 +22,13 @@ export default () => (
                         fill-rule="evenodd"
                         d="M900 520L750 670H338V151L489 0l6 6h1v506h-1l1 1v-1h404v8zm-412-8V15L346 157v498l143-143h-1zm8 8v-1L354 662h391l141-142H496z"
                     ></path>
-                    <text y="360" font-family="Myriad Pro" font-size="200">
-                        <tspan fill="#FFF" font-family="Montserrat">
+                    <text y="360" fontFamily="Myriad Pro" fontSize="200">
+                        <tspan fill="#FFF" fontFamily="Montserrat">
                             by
                         </tspan>
                     </text>
-                    <text x="580" y="360" font-family="Myriad Pro" font-size="200">
-                        <tspan fill="#FFF" font-family="Montserrat">
+                    <text x="580" y="360" fontFamily="Myriad Pro" fontSize="200">
+                        <tspan fill="#FFF" fontFamily="Montserrat">
                             LESNITSKY
                         </tspan>
                     </text>

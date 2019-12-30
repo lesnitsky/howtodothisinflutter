@@ -1,18 +1,5 @@
 import Example from '../components/md/Example';
 
-<Example reactnative>
-
-```js
-<TouchableWithoutFeedback
-  onPress={_onPress}
-  onLongPress={_onLongPress}
->
-  <Text>Button</Text>
-</TouchableWithoutFeedback>
-```
-
-</Example>
-
 <Example flutter>
 
 ```dart

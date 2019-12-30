@@ -1,27 +1,5 @@
 import Example from '../components/md/Example';
 
-<Example reactnative>
-
-```js
-import React, { Component } from 'react';
-import { Text, View, AppRegistry } from 'react-native';
-import { name as appName } from './app.json';
-
-export default class HelloWorldApp extends Component {
-  render() {
-    return (
-      <View>
-        <Text>Hello world!</Text>
-      </View>
-    );
-  }
-}
-
-AppRegistry.registerComponent(appName, () => App);
-```
-
-</Example>
-
 <Example flutter>
 
 ```dart

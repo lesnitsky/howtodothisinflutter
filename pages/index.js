@@ -40,6 +40,7 @@ export default class App extends Component {
                         background: #212121;
                         color: white;
                         font-family: 'Roboto Slab', serif;
+                        font-size: 18px;
                     }
 
                     h1,
