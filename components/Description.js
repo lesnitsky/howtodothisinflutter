@@ -17,6 +17,19 @@ export default () => (
                     Star
                 </a>
             </div>
+
+            <script src="https://platform.twitter.com/widgets.js"></script>
+            <a
+                style={{ opacity: 0 }}
+                href="https://twitter.com/lesnitsky_dev?ref_src=twsrc%5Etfw"
+                class="twitter-follow-button"
+                data-size="large"
+                data-show-screen-name="false"
+                data-lang="en"
+                data-show-count="true"
+            >
+                Follow @lesnitsky_a
+            </a>
         </header>
 
         <h2>
@@ -36,6 +49,7 @@ export default () => (
             .github-button-container {
                 line-height: 1em;
                 height: 28px;
+                margin-right: 0.5em;
             }
 
             .github-button-container > a {
