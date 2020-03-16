@@ -29,15 +29,6 @@ export default class MyDocument extends Document {
                     />
                     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" />
                     <link href="https://unpkg.com/firacode@1.205.0/distr/fira_code.css" rel="stylesheet" />
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                            var xhr = new XMLHttpRequest(); 
-                            xhr.open("GET", "https://api.lesnitsky.dev/ping"); 
-                            xhr.send();
-                            `,
-                        }}
-                    />
                 </Head>
                 <body>
                     <Main />
