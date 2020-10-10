@@ -4,7 +4,7 @@ import Example from '../components/md/Example';
 
 ```dart
 bool isDev = false;
-assert(isDev = true);
+assert(isDev == true);
 
 if (isDev) {
     doSmth();
