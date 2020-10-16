@@ -1,0 +1,464 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8" class="next-head"/><title class="jsx-3223685315 next-head">Flutter cheat sheet</title><link rel="preload" href="/_next/static/46tr_wwnJOzjqc_l99_gi/pages/index.js" as="script"/><link rel="preload" href="/_next/static/46tr_wwnJOzjqc_l99_gi/pages/_app.js" as="script"/><link rel="preload" href="/_next/static/46tr_wwnJOzjqc_l99_gi/pages/_error.js" as="script"/><link rel="preload" href="/_next/static/runtime/webpack-f4542de9ce6104e90191.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.6e12fec9308b3ddb6026.js" as="script"/><link rel="preload" href="/_next/static/chunks/styles.9a0e6c596144256359a2.js" as="script"/><link rel="preload" href="/_next/static/runtime/main-2371de51f4bc66175452.js" as="script"/><link rel="stylesheet" href="/_next/static/css/styles.8ead3eba.chunk.css"/><style id="__jsx-2267996273">footer.jsx-2267996273{font-size:0.8em;box-sizing:border-box;margin-top:5em;}
+.footer-row.jsx-2267996273{margin-top:0.3em;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}
+.footer-row.jsx-2267996273>a.jsx-2267996273{margin:0 10px;}
+.credits.jsx-2267996273{line-height:0;}
+.gh-link.jsx-2267996273{margin-left:0.3em;}
+.gh-link.jsx-2267996273:hover>path.jsx-2267996273{fill:#cc99cd;}
+.lesnitsky-badge.jsx-2267996273{background:black;display:inline-block;padding:0.2em 1em;border-radius:8px;}
+.footer-row.jsx-2267996273>a.lesnitsky-badge.jsx-2267996273{margin-left:0;}</style><style id="__jsx-3720187894">header.jsx-3720187894{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.github-button-container.jsx-3720187894{line-height:1em;height:28px;margin-right:0.5em;}
+.github-button-container.jsx-3720187894>a.jsx-3720187894{visibility:hidden;}
+h1.jsx-3720187894{width:auto;font-size:2em;margin-right:0.5em;}
+h2.jsx-3720187894{font-size:1.2em;color:white;margin-top:1.5em;}
+section.jsx-3720187894{min-height:100vh;font-size:24px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-item:center;-webkit-box-align-item:center;-ms-flex-align-item:center;align-item:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:2em 0;box-sizing:border-box;}
+small.jsx-3720187894{color:gray;border-left:3px solid gray;padding-left:20px;}</style><style id="__jsx-941151069">.back-to-toc.jsx-941151069{position:fixed;bottom:1em;right:1em;padding:1em;-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end;background:#424141;-webkit-transition:-webkit-transform 0.3s;-webkit-transition:transform 0.3s;transition:transform 0.3s;color:white;border-radius:8px;}</style><style id="__jsx-3223685315">body{margin:0;background:#212121;color:white;font-family:'Roboto Slab',serif;font-size:18px;}
+h1,h2{color:#cc99cd;}
+h3{color:#6196cc;}
+h1,h2{width:100%;}
+blockquote{border-left:2px dotted gray;margin:0;padding:0 1em;color:gray;}
+.app{width:90%;margin:0 auto;}
+.examples-container>div>div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}
+.examples-container>div>div>*{width:100%;}
+.toc-container>h2:empty{display:none;}
+pre[class*='language-']{border-radius:10px;margin-bottom:20px;}
+code{background:#2d2d2d;padding:0.5em;}
+code[class*='language-']{padding:0;}
+pre[class*='language-'],code[class*='language-']{font-family:'Fira Code',monospace;font-size:0.95em;}
+a{-webkit-text-decoration:none;text-decoration:none;color:#6196cc;}
+a:visited{color:#6196cc;}
+.footer-container{font-size:24px;padding:2em 0;}
+.footer-container>p{font-size:0.6em;}</style><meta name="viewport" content="initial-scale=1.0, width=device-width"/><meta name="description" content="Flutter cheat sheet"/><meta name="tags" content="flutter, cheatsheet, props, hide status bar, didUpdateWidget, debounce, singleton"/><link rel="shortcut icon" href="https://gitcdn.xyz/repo/flutter/flutter/master/dev/docs/favicon.ico"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-130596321-1"></script><script>
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+    
+                        gtag('config', 'UA-130596321-1');
+                    </script><link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"/><link href="https://unpkg.com/firacode@1.205.0/distr/fira_code.css" rel="stylesheet"/></head><body><div id="__next"><div class="jsx-3223685315 app" data-reactroot=""><section class="jsx-3720187894"><header class="jsx-3720187894"><h1 class="jsx-3720187894">How to do this in Flutter?</h1><div class="jsx-3720187894 github-button-container"><a href="https://github.com/lesnitsky/howtodothisinflutter" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star lesnitsky/howtodothisinflutter on GitHub" class="jsx-3720187894 github-button">Star</a></div><script src="https://platform.twitter.com/widgets.js" class="jsx-3720187894"></script><a style="opacity:0" href="https://twitter.com/lesnitsky_dev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-lang="en" data-show-count="true" class="jsx-3720187894">Follow @lesnitsky_a</a></header><h2 class="jsx-3720187894">Flutter and dart cheat sheet<br class="jsx-3720187894"/></h2><footer class="jsx-2267996273"><div class="jsx-2267996273 footer-row credits">Built with<a href="https://mdxjs.com/" target="_blank" class="jsx-2267996273"><img src="https://mdx-logo.now.sh/" width="70" alt="mdx" class="jsx-2267996273"/></a>and<a href="https://nextjs.org/" target="_blank" class="jsx-2267996273"><svg height="50" viewBox="0 0 148 90" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="jsx-2267996273"><path d="M34.992 23.495h27.855v2.219H37.546v16.699h23.792v2.219H37.546v18.334h25.591v2.219H34.992v-41.69zm30.35 0h2.96l13.115 18.334 13.405-18.334L113.055.207 83.1 43.756l15.436 21.429H95.46L81.417 45.683 67.316 65.185h-3.018L79.85 43.756 65.343 23.495zm34.297 2.219v-2.219h31.742v2.219h-14.623v39.47h-2.554v-39.47H99.64zM.145 23.495h3.192l44.011 66.003L29.16 65.185 2.814 26.648l-.116 38.537H.145v-41.69zm130.98 38.801c-.523 0-.914-.405-.914-.928 0-.524.391-.929.913-.929.528 0 .913.405.913.929 0 .523-.385.928-.913.928zm2.508-2.443H135c.019.742.56 1.24 1.354 1.24.888 0 1.391-.535 1.391-1.539v-6.356h1.391v6.362c0 1.808-1.043 2.849-2.77 2.849-1.62 0-2.732-1.01-2.732-2.556zm7.322-.08h1.379c.118.853.95 1.395 2.149 1.395 1.117 0 1.937-.58 1.937-1.377 0-.685-.521-1.097-1.708-1.377l-1.155-.28c-1.62-.38-2.36-1.166-2.36-2.487 0-1.602 1.304-2.668 3.26-2.668 1.82 0 3.15 1.066 3.23 2.58h-1.354c-.13-.828-.85-1.346-1.894-1.346-1.1 0-1.832.53-1.832 1.34 0 .642.472 1.01 1.64 1.284l.987.243c1.838.43 2.596 1.178 2.596 2.53 0 1.72-1.33 2.799-3.453 2.799-1.987 0-3.323-1.029-3.422-2.637z" fill="white" fill-rule="nonzero" class="jsx-2267996273"></path></svg></a><a href="https://lesnitsky.dev?utm_soruce=howtodothisinflutter" target="blank" class="jsx-2267996273 lesnitsky-badge"><svg id="signoff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1675 670" height="40px" class="jsx-2267996273"><path fill="#FFF" fill-rule="evenodd" d="M900 520L750 670H338V151L489 0l6 6h1v506h-1l1 1v-1h404v8zm-412-8V15L346 157v498l143-143h-1zm8 8v-1L354 662h391l141-142H496z" class="jsx-2267996273"></path><text y="360" font-family="Myriad Pro" font-size="200" class="jsx-2267996273"><tspan fill="#FFF" font-family="Montserrat" class="jsx-2267996273">by</tspan></text><text x="580" y="360" font-family="Myriad Pro" font-size="200" class="jsx-2267996273"><tspan fill="#FFF" font-family="Montserrat" class="jsx-2267996273">LESNITSKY</tspan></text></svg></a></div><div class="jsx-2267996273 footer-row">Contributions are very welcome!<!-- --> <a href="https://github.com/lesnitsky/howtodothisinflutter" target="_blank" class="jsx-2267996273"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024" fill="none" class="jsx-2267996273 gh-link"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="white" class="jsx-2267996273"></path></svg></a></div></footer></section><div class="jsx-3223685315 examples-container"><div><div class="toc-container"><h2 id="table-of-contents">Table of contents</h2><ul><li><a href="#init">Init</a></li><li><a href="#healthcheck">Healthcheck</a></li><li><a href="#hello-world">Hello World</a></li><li><a href="#stateless-widget">Stateless Widget</a></li><li><a href="#required-and-default-props">Required and default props</a></li><li><a href="#stateful-widget">Stateful Widget</a></li><li><a href="#combining-props-and-state">Combining props and state</a></li><li><a href="#lifecycle-hooks">Lifecycle hooks</a></li><li><a href="#android-ink-effect">Android Ink effect</a></li><li><a href="#detecting-gestures">Detecting Gestures</a></li><li><a href="#loading-indicator">Loading indicator</a></li><li><a href="#platform-specific-code">Platform specific code</a></li><li><a href="#hide-status-bar">Hide status bar</a></li><li><a href="#lock-orientation">Lock orientation</a></li><li><a href="#show-alert">Show alert</a></li><li><a href="#check-if-dev">Check if dev</a></li><li><a href="#navigation">Navigation</a></li><li><a href="#arrays">Arrays</a></li><li><a href="#make-http-request">Make http request</a></li><li><a href="#async-await">Async Await</a></li><li><a href="#json">JSON</a></li><li><a href="#singleton">Singleton</a></li><li><a href="#debounce">Debounce</a></li></ul><h2 id=""></h2></div><h2 id="init">Init</h2><div><div class="example-container"><pre class="language-bash"><code class="language-bash">flutter create my_project
+</code></pre><h3 id="specify-organisation-name">Specify organisation name</h3><pre class="language-bash"><code class="language-bash">flutter create --org com.yourorg your_project
+</code></pre></div></div><h2 id="healthcheck">Healthcheck</h2><div><div class="example-container"><pre class="language-bash"><code class="language-bash">flutter doctor
+</code></pre></div></div><h2 id="hello-world">Hello World</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;package:flutter/material.dart&#x27;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">runApp</span><span class="token punctuation">(</span><span class="token function">MyApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">MyApp</span> <span class="token keyword">extends</span> <span class="token class-name">StatelessWidget</span> <span class="token punctuation">{</span>
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">MaterialApp</span><span class="token punctuation">(</span>
+      title<span class="token punctuation">:</span> <span class="token string">&#x27;Hello world!&#x27;</span><span class="token punctuation">,</span>
+      home<span class="token punctuation">:</span> <span class="token function">Scaffold</span><span class="token punctuation">(</span>
+        body<span class="token punctuation">:</span> <span class="token function">Center</span><span class="token punctuation">(</span>
+          child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Hello world&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="stateless-widget">Stateless Widget</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;package:flutter/material.dart&#x27;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Greeter</span> <span class="token keyword">extends</span> <span class="token class-name">StatelessWidget</span> <span class="token punctuation">{</span>
+  <span class="token function">Greeter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>Key key <span class="token metadata symbol">@required</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token keyword">super</span><span class="token punctuation">(</span>key<span class="token punctuation">:</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">final</span> String name<span class="token punctuation">;</span>
+
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Container</span><span class="token punctuation">(</span>
+      child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Hello, $name&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="required-and-default-props">Required and default props</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;package:flutter/material.dart&#x27;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">SomeComponent</span> <span class="token keyword">extends</span> <span class="token class-name">StatelessWidget</span> <span class="token punctuation">{</span>
+  <span class="token function">SomeComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token metadata symbol">@required</span> <span class="token keyword">this</span><span class="token punctuation">.</span>foo<span class="token punctuation">,</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>bar <span class="token operator">=</span> <span class="token string">&#x27;some string&#x27;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">final</span> String foo<span class="token punctuation">;</span>
+  <span class="token keyword">final</span> String bar<span class="token punctuation">;</span>
+
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Container</span><span class="token punctuation">(</span>
+      child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;$foo $bar&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="stateful-widget">Stateful Widget</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;package:flutter/material.dart&#x27;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">WidgetWithState</span> <span class="token keyword">extends</span> <span class="token class-name">StatefulWidget</span> <span class="token punctuation">{</span>
+  <span class="token metadata symbol">@override</span>
+  _WidgetWithStateState <span class="token function">createState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">_WidgetWithStateState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">_WidgetWithStateState</span> <span class="token keyword">extends</span> <span class="token class-name">State</span><span class="token operator">&lt;</span>WidgetWithState<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  int counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+  <span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      counter<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">decrement</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      counter<span class="token operator">--</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Row</span><span class="token punctuation">(</span>
+      children<span class="token punctuation">:</span> <span class="token operator">&lt;</span>Widget<span class="token operator">&gt;</span><span class="token punctuation">[</span>
+        <span class="token function">FlatButton</span><span class="token punctuation">(</span>onPressed<span class="token punctuation">:</span> increment<span class="token punctuation">,</span> child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Increment&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">FlatButton</span><span class="token punctuation">(</span>onPressed<span class="token punctuation">:</span> decrement<span class="token punctuation">,</span> child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Decrement&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">Text</span><span class="token punctuation">(</span>counter<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="combining-props-and-state">Combining props and state</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;package:flutter/material.dart&#x27;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">SomeWidget</span> <span class="token keyword">extends</span> <span class="token class-name">StatefulWidget</span> <span class="token punctuation">{</span>
+  <span class="token function">SomeWidget</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token metadata symbol">@required</span> <span class="token keyword">this</span><span class="token punctuation">.</span>fruit<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">final</span> String fruit<span class="token punctuation">;</span>
+
+  <span class="token metadata symbol">@override</span>
+  _SomeWidgetState <span class="token function">createState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">_SomeWidgetState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">_SomeWidgetState</span> <span class="token keyword">extends</span> <span class="token class-name">State</span><span class="token operator">&lt;</span>SomeWidget<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  int count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Container</span><span class="token punctuation">(</span>
+      child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;$count ${widget.fruit}&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ParentWidget</span> <span class="token keyword">extends</span> <span class="token class-name">StatelessWidget</span> <span class="token punctuation">{</span>
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Container</span><span class="token punctuation">(</span>
+        child<span class="token punctuation">:</span> <span class="token function">SomeWidget</span><span class="token punctuation">(</span>fruit<span class="token punctuation">:</span> <span class="token string">&#x27;oranges&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="lifecycle-hooks">Lifecycle hooks</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">class</span> <span class="token class-name">_MyComponentState</span> <span class="token keyword">extends</span> <span class="token class-name">State</span><span class="token operator">&lt;</span>MyComponent<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token metadata symbol">@override</span>
+  <span class="token keyword">void</span> <span class="token function">initState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// this method is called before the first build</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">initState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token metadata symbol">@override</span>
+  <span class="token keyword">void</span> <span class="token function">didUpdateWidget</span><span class="token punctuation">(</span>MyComponent oldWidget<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// this method IS called when parent widget is rebuilt</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">didUpdateWidget</span><span class="token punctuation">(</span>oldWidget<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token metadata symbol">@override</span> <span class="token function">didChangeDependencies</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// called when InheritedWidget updates</span>
+    <span class="token comment">// read more here https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">didChangeDependencies</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token metadata symbol">@override</span>
+  <span class="token keyword">void</span> <span class="token function">dispose</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// called after widget was unmounted from widget tree</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">dispose</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="android-ink-effect">Android Ink effect</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token function">InkWell</span><span class="token punctuation">(</span>
+  child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Button&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  onTap<span class="token punctuation">:</span> _onTap<span class="token punctuation">,</span>
+  onLongPress<span class="token punctuation">:</span> _onLongPress<span class="token punctuation">,</span>
+  onDoubleTap<span class="token punctuation">:</span> _onDoubleTap<span class="token punctuation">,</span>
+  onTapCancel<span class="token punctuation">:</span> _onTapCancel<span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div><h2 id="detecting-gestures">Detecting Gestures</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token function">GestureDetector</span><span class="token punctuation">(</span>
+  onTap<span class="token punctuation">:</span> _onTap<span class="token punctuation">,</span>
+  onLongPress<span class="token punctuation">:</span> _onLongPress<span class="token punctuation">,</span>
+  child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Button&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div><h2 id="loading-indicator">Loading indicator</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">class</span> <span class="token class-name">SomeWidget</span> <span class="token keyword">extends</span> <span class="token class-name">StatefulWidget</span> <span class="token punctuation">{</span>
+  <span class="token metadata symbol">@override</span>
+  _SomeWidgetState <span class="token function">createState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">_SomeWidgetState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">_SomeWidgetState</span> <span class="token keyword">extends</span> <span class="token class-name">State</span><span class="token operator">&lt;</span>SomeWidget<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  Future future<span class="token punctuation">;</span>
+
+  <span class="token metadata symbol">@override</span>
+  <span class="token keyword">void</span> <span class="token function">initState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    future <span class="token operator">=</span> Future<span class="token punctuation">.</span><span class="token function">delayed</span><span class="token punctuation">(</span><span class="token function">Duration</span><span class="token punctuation">(</span>seconds<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">initState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">FutureBuilder</span><span class="token punctuation">(</span>
+      future<span class="token punctuation">:</span> future<span class="token punctuation">,</span>
+      builder<span class="token punctuation">:</span> <span class="token punctuation">(</span>context<span class="token punctuation">,</span> snapshot<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> snapshot<span class="token punctuation">.</span>connectionState <span class="token operator">==</span> ConnectionState<span class="token punctuation">.</span>done
+            <span class="token operator">?</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Loaded&#x27;</span><span class="token punctuation">)</span>
+            <span class="token punctuation">:</span> <span class="token function">CircularProgressIndicator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="platform-specific-code">Platform specific code</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;dart:io&#x27;</span> show Platform<span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>Platform<span class="token punctuation">.</span>isIOS<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">doSmthIOSSpecific</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>Platform<span class="token punctuation">.</span>isAndroid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">doSmthAndroidSpecific</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="hide-status-bar">Hide status bar</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;package:flutter/services.dart&#x27;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    SystemChrome<span class="token punctuation">.</span><span class="token function">setEnabledSystemUIOverlays</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="lock-orientation">Lock orientation</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;package:flutter/services.dart&#x27;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">async</span> <span class="token punctuation">{</span>
+  <span class="token keyword">await</span> SystemChrome<span class="token punctuation">.</span><span class="token function">setPreferredOrientations</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    DeviceOrientation<span class="token punctuation">.</span>portraitUp<span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">runApp</span><span class="token punctuation">(</span><span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="show-alert">Show alert</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart">showDialog<span class="token operator">&lt;</span><span class="token keyword">void</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>
+  context<span class="token punctuation">:</span> context<span class="token punctuation">,</span>
+  barrierDismissible<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  builder<span class="token punctuation">:</span> <span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">AlertDialog</span><span class="token punctuation">(</span>
+      title<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Alert Title&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      content<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;My Alert Msg&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      actions<span class="token punctuation">:</span> <span class="token operator">&lt;</span>Widget<span class="token operator">&gt;</span><span class="token punctuation">[</span>
+        <span class="token function">FlatButton</span><span class="token punctuation">(</span>
+          child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Ask me later&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          onPressed<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&#x27;Ask me later pressed&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Navigator<span class="token punctuation">.</span><span class="token function">of</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">FlatButton</span><span class="token punctuation">(</span>
+          child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Cancel&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          onPressed<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&#x27;Cancel pressed&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Navigator<span class="token punctuation">.</span><span class="token function">of</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">FlatButton</span><span class="token punctuation">(</span>
+          child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;OK&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          onPressed<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&#x27;OK pressed&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Navigator<span class="token punctuation">.</span><span class="token function">of</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div><h2 id="check-if-dev">Check if dev</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart">bool isDev <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token keyword">assert</span><span class="token punctuation">(</span>isDev <span class="token operator">==</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>isDev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">doSmth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="navigation">Navigation</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;package:flutter/material.dart&#x27;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">FirstScreen</span> <span class="token keyword">extends</span> <span class="token class-name">StatelessWidget</span> <span class="token punctuation">{</span>
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Center</span><span class="token punctuation">(</span>
+      child<span class="token punctuation">:</span> <span class="token function">RaisedButton</span><span class="token punctuation">(</span>
+        child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Go to SecondScreen&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        onPressed<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Navigator<span class="token punctuation">.</span><span class="token function">pushNamed</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> <span class="token string">&#x27;/second&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">SecondScreen</span> <span class="token keyword">extends</span> <span class="token class-name">StatelessWidget</span> <span class="token punctuation">{</span>
+  <span class="token keyword">void</span> <span class="token function">_pushSecondScreen</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Navigator<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> <span class="token function">MaterialPageRoute</span><span class="token punctuation">(</span>builder<span class="token punctuation">:</span> <span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">SecondScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Column</span><span class="token punctuation">(</span>
+      children<span class="token punctuation">:</span> <span class="token operator">&lt;</span>Widget<span class="token operator">&gt;</span><span class="token punctuation">[</span>
+        <span class="token function">RaisedButton</span><span class="token punctuation">(</span>
+          child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Go back!&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          onPressed<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Navigator<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">RaisedButton</span><span class="token punctuation">(</span>
+          child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">&#x27;Go to SecondScreen... again!&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          onPressed<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">_pushSecondScreen</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">runApp</span><span class="token punctuation">(</span><span class="token function">MaterialApp</span><span class="token punctuation">(</span>
+    initialRoute<span class="token punctuation">:</span> <span class="token string">&#x27;/&#x27;</span><span class="token punctuation">,</span>
+    routes<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&#x27;/&#x27;</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">FirstScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token string">&#x27;/second&#x27;</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">SecondScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="arrays">Arrays</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">final</span> length <span class="token operator">=</span> items<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> newItems <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token function">addAll</span><span class="token punctuation">(</span>otherItems<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> allEven <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> item <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> filled <span class="token operator">=</span> List<span class="token operator">&lt;</span>int<span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token function">filled</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> even <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> n <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> found <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">firstWhere</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> item<span class="token punctuation">.</span>id <span class="token operator">==</span> <span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> index <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">indexWhere</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> item<span class="token punctuation">.</span>id <span class="token operator">==</span> <span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> flat <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">expand</span><span class="token punctuation">(</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> _<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> mapped <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">expand</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>item <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+items<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">print</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+items<span class="token punctuation">.</span><span class="token function">asMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> item<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&#x27;$item, $index&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> includes <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> indexOf <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> joined <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&#x27;,&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> newItems <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> item <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> item <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">removeLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+items<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> reduced <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">fold</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>acc<span class="token punctuation">,</span> item<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  acc<span class="token punctuation">[</span>item<span class="token punctuation">.</span>id<span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> acc<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> reversed <span class="token operator">=</span> items<span class="token punctuation">.</span>reversed<span class="token punctuation">;</span>
+
+items<span class="token punctuation">.</span><span class="token function">removeAt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> slice <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">sublist</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">final</span> hasOdd <span class="token operator">=</span> items<span class="token punctuation">.</span><span class="token function">any</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> item <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+items<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> a <span class="token operator">-</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+items<span class="token punctuation">.</span><span class="token function">replaceRange</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">42</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+items<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div><h2 id="make-http-request">Make http request</h2><div><div class="example-container"><pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">dependencies</span><span class="token punctuation">:</span>
+  <span class="token key atrule">http</span><span class="token punctuation">:</span> ^0.12.0
+</code></pre><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;dart:convert&#x27;</span> show json<span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&#x27;package:http/http.dart&#x27;</span> <span class="token operator">as</span> http<span class="token punctuation">;</span>
+
+http<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span>API_URL<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>http<span class="token punctuation">.</span>Response res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">final</span> data <span class="token operator">=</span> json<span class="token punctuation">.</span><span class="token function">decode</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div><h2 id="async-await">Async Await</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart">Future<span class="token operator">&lt;</span>int<span class="token operator">&gt;</span> <span class="token function">doSmthAsync</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">async</span> <span class="token punctuation">{</span>
+  <span class="token keyword">final</span> result <span class="token operator">=</span> <span class="token keyword">await</span> Future<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">SomeClass</span> <span class="token punctuation">{</span>
+  <span class="token function">method</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">async</span> <span class="token punctuation">{</span>
+    <span class="token keyword">final</span> result <span class="token operator">=</span> <span class="token keyword">await</span> Future<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="json">JSON</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;dart:convert&#x27;</span> show json<span class="token punctuation">;</span>
+
+json<span class="token punctuation">.</span><span class="token function">decode</span><span class="token punctuation">(</span>someString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+json<span class="token punctuation">.</span><span class="token function">encode</span><span class="token punctuation">(</span>encodableObject<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><code>json.decode</code> returns a <code>dynamic</code> type, which is probably not very useful</p><p>You should describe each entity as a Dart class with <code>fromJson</code> and <code>toJson</code> methods</p><pre class="language-dart"><code class="language-dart"><span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+    String displayName<span class="token punctuation">;</span>
+    String photoUrl<span class="token punctuation">;</span>
+
+    <span class="token function">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>displayName<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>photoUrl<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    User<span class="token punctuation">.</span><span class="token function">fromJson</span><span class="token punctuation">(</span>Map<span class="token operator">&lt;</span>String<span class="token punctuation">,</span> <span class="token keyword">dynamic</span><span class="token operator">&gt;</span> json<span class="token punctuation">)</span>
+      <span class="token punctuation">:</span> displayName <span class="token operator">=</span> json<span class="token punctuation">[</span><span class="token string">&#x27;displayName&#x27;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        photoUrl <span class="token operator">=</span> json<span class="token punctuation">[</span><span class="token string">&#x27;photoUrl&#x27;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    Map<span class="token operator">&lt;</span>String<span class="token punctuation">,</span> <span class="token keyword">dynamic</span><span class="token operator">&gt;</span> <span class="token function">toJson</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token string">&#x27;displayName&#x27;</span><span class="token punctuation">:</span> displayName<span class="token punctuation">,</span>
+        <span class="token string">&#x27;photoUrl&#x27;</span><span class="token punctuation">:</span> photoUrl<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">final</span> user <span class="token operator">=</span> User<span class="token punctuation">.</span><span class="token function">fromJson</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span><span class="token function">decode</span><span class="token punctuation">(</span>jsonString<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+json<span class="token punctuation">.</span><span class="token function">encode</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">toJson</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>However this approach is error-prone (e.g. you can forget to update map key after class field was renamed), so you can use <code>json_serializable</code> as an alternative</p><p>Add <code>json_annotation</code>, <code>build_runner</code> and <code>json_serializable</code> to dependencies</p><pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">dependencies</span><span class="token punctuation">:</span>
+  <span class="token key atrule">json_annotation</span><span class="token punctuation">:</span> ^2.0.0
+
+<span class="token key atrule">dev_dependencies</span><span class="token punctuation">:</span>
+  <span class="token key atrule">build_runner</span><span class="token punctuation">:</span> ^1.0.0
+  <span class="token key atrule">json_serializable</span><span class="token punctuation">:</span> ^2.0.0
+</code></pre><p>Update your code</p><pre class="language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">&#x27;package:json_annotation/json_annotation.dart&#x27;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">part</span> <span class="token string">&#x27;user.g.dart&#x27;</span><span class="token punctuation">;</span>
+
+<span class="token metadata symbol">@JsonSerializable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+  String displayName<span class="token punctuation">;</span>
+  String photoUrl<span class="token punctuation">;</span>
+
+  <span class="token function">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>displayName <span class="token keyword">this</span><span class="token punctuation">.</span>photoUrl<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// _$UserFromJson is generated and available in user.g.dart</span>
+  <span class="token keyword">factory</span> User<span class="token punctuation">.</span><span class="token function">fromJson</span><span class="token punctuation">(</span>Map<span class="token operator">&lt;</span>String<span class="token punctuation">,</span> <span class="token keyword">dynamic</span><span class="token operator">&gt;</span> json<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> _$<span class="token function">UserFromJson</span><span class="token punctuation">(</span>json<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// _$UserToJson is generated and available in user.g.dart</span>
+  Map<span class="token operator">&lt;</span>String<span class="token punctuation">,</span> <span class="token keyword">dynamic</span><span class="token operator">&gt;</span> <span class="token function">toJson</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> _$<span class="token function">UserToJson</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">final</span> user <span class="token operator">=</span> User<span class="token punctuation">.</span><span class="token function">fromJson</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span><span class="token function">decode</span><span class="token punctuation">(</span>jsonString<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+json<span class="token punctuation">.</span><span class="token function">encode</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// toJson is called by encode</span>
+</code></pre><p>Run <code>flutter packages pub run build_runner build</code> to generate serialization/deserialization code</p><p>To watch for changes run <code>flutter packages pub run build_runner watch</code></p><p><a href="https://flutter.io/docs/development/data-and-backend/json">Read more about json and serialization here</a></p></div></div><h2 id="singleton">Singleton</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart"><span class="token keyword">class</span> <span class="token class-name">Singleton</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> Singleton _instance<span class="token punctuation">;</span>
+
+  <span class="token keyword">final</span> int prop<span class="token punctuation">;</span>
+
+  <span class="token keyword">factory</span> <span class="token function">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span>
+    _instance <span class="token operator">?</span><span class="token operator">?</span><span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton<span class="token punctuation">.</span>_internal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  Singleton<span class="token punctuation">.</span><span class="token function">_internal</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span> prop <span class="token operator">=</span> <span class="token number">42</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><h2 id="debounce">Debounce</h2><div><div class="example-container"><pre class="language-dart"><code class="language-dart">Timer _debounce<span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>_debounce<span class="token operator">?</span><span class="token punctuation">.</span>isActive <span class="token operator">?</span><span class="token operator">?</span> <span class="token boolean">false</span><span class="token punctuation">)</span> _debounce<span class="token punctuation">.</span><span class="token function">cancel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+_debounce <span class="token operator">=</span> <span class="token function">Timer</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token function">Duration</span><span class="token punctuation">(</span>milliseconds<span class="token punctuation">:</span> <span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">someFN</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div></div></div><a href="#table-of-contents" style="transform:translateY(200%)" class="jsx-941151069 back-to-toc"><span class="jsx-941151069">⏫</span> ToC</a><section class="jsx-3223685315 footer-container"><footer class="jsx-2267996273"><div class="jsx-2267996273 footer-row credits">Built with<a href="https://mdxjs.com/" target="_blank" class="jsx-2267996273"><img src="https://mdx-logo.now.sh/" width="70" alt="mdx" class="jsx-2267996273"/></a>and<a href="https://nextjs.org/" target="_blank" class="jsx-2267996273"><svg height="50" viewBox="0 0 148 90" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="jsx-2267996273"><path d="M34.992 23.495h27.855v2.219H37.546v16.699h23.792v2.219H37.546v18.334h25.591v2.219H34.992v-41.69zm30.35 0h2.96l13.115 18.334 13.405-18.334L113.055.207 83.1 43.756l15.436 21.429H95.46L81.417 45.683 67.316 65.185h-3.018L79.85 43.756 65.343 23.495zm34.297 2.219v-2.219h31.742v2.219h-14.623v39.47h-2.554v-39.47H99.64zM.145 23.495h3.192l44.011 66.003L29.16 65.185 2.814 26.648l-.116 38.537H.145v-41.69zm130.98 38.801c-.523 0-.914-.405-.914-.928 0-.524.391-.929.913-.929.528 0 .913.405.913.929 0 .523-.385.928-.913.928zm2.508-2.443H135c.019.742.56 1.24 1.354 1.24.888 0 1.391-.535 1.391-1.539v-6.356h1.391v6.362c0 1.808-1.043 2.849-2.77 2.849-1.62 0-2.732-1.01-2.732-2.556zm7.322-.08h1.379c.118.853.95 1.395 2.149 1.395 1.117 0 1.937-.58 1.937-1.377 0-.685-.521-1.097-1.708-1.377l-1.155-.28c-1.62-.38-2.36-1.166-2.36-2.487 0-1.602 1.304-2.668 3.26-2.668 1.82 0 3.15 1.066 3.23 2.58h-1.354c-.13-.828-.85-1.346-1.894-1.346-1.1 0-1.832.53-1.832 1.34 0 .642.472 1.01 1.64 1.284l.987.243c1.838.43 2.596 1.178 2.596 2.53 0 1.72-1.33 2.799-3.453 2.799-1.987 0-3.323-1.029-3.422-2.637z" fill="white" fill-rule="nonzero" class="jsx-2267996273"></path></svg></a><a href="https://lesnitsky.dev?utm_soruce=howtodothisinflutter" target="blank" class="jsx-2267996273 lesnitsky-badge"><svg id="signoff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1675 670" height="40px" class="jsx-2267996273"><path fill="#FFF" fill-rule="evenodd" d="M900 520L750 670H338V151L489 0l6 6h1v506h-1l1 1v-1h404v8zm-412-8V15L346 157v498l143-143h-1zm8 8v-1L354 662h391l141-142H496z" class="jsx-2267996273"></path><text y="360" font-family="Myriad Pro" font-size="200" class="jsx-2267996273"><tspan fill="#FFF" font-family="Montserrat" class="jsx-2267996273">by</tspan></text><text x="580" y="360" font-family="Myriad Pro" font-size="200" class="jsx-2267996273"><tspan fill="#FFF" font-family="Montserrat" class="jsx-2267996273">LESNITSKY</tspan></text></svg></a></div><div class="jsx-2267996273 footer-row">Contributions are very welcome!<!-- --> <a href="https://github.com/lesnitsky/howtodothisinflutter" target="_blank" class="jsx-2267996273"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024" fill="none" class="jsx-2267996273 gh-link"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="white" class="jsx-2267996273"></path></svg></a></div></footer><p class="jsx-3223685315">MIT © <a href="https://lesnitsky.dev" class="jsx-3223685315">Lesnitsky</a></p></section></div></div><script>__NEXT_DATA__ = {"props":{"pageProps":{}},"page":"/","query":{},"buildId":"46tr_wwnJOzjqc_l99_gi","nextExport":true};__NEXT_LOADED_PAGES__=[];__NEXT_REGISTER_PAGE=function(r,f){__NEXT_LOADED_PAGES__.push([r, f])}</script><script async="" id="__NEXT_PAGE__/" src="/_next/static/46tr_wwnJOzjqc_l99_gi/pages/index.js"></script><script async="" id="__NEXT_PAGE__/_app" src="/_next/static/46tr_wwnJOzjqc_l99_gi/pages/_app.js"></script><script async="" id="__NEXT_PAGE__/_error" src="/_next/static/46tr_wwnJOzjqc_l99_gi/pages/_error.js"></script><script src="/_next/static/runtime/webpack-f4542de9ce6104e90191.js" async=""></script><script src="/_next/static/chunks/commons.6e12fec9308b3ddb6026.js" async=""></script><script src="/_next/static/chunks/styles.9a0e6c596144256359a2.js" async=""></script><script src="/_next/static/runtime/main-2371de51f4bc66175452.js" async=""></script><script async="" defer="" src="https://buttons.github.io/buttons.js"></script></body></html>
