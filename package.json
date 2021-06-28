@@ -24,7 +24,7 @@
         "next": "^7.0.2",
         "react": "^16.6.3",
         "react-dom": "^16.6.3",
-        "prismjs": "^1.15.0",
+        "prismjs": "^1.24.0",
         "rehype-slug": "^2.0.2",
         "remark-emoji": "^2.0.2",
         "remark-toc": "^5.1.1"
