@@ -21,6 +21,7 @@ import LoadingIndicatorWhileSmthIsLoading from './loading-indicator-while-smth-i
 import Navigation from './navigation.md';
 import Debounce from './debounce.md';
 import CheckIfDev from './check-if-dev.md';
+import VisiblityWidget from './visiblity-widget.md';
 
 <div className="toc-container">
 
@@ -126,3 +127,7 @@ import CheckIfDev from './check-if-dev.md';
 ## Debounce
 
 <Debounce />
+
+## Visiblity Widget
+
+<VisiblityWidget />

@@ -35,6 +35,8 @@ How to contribute new examples:
 -   [Andrei Lesnitsky](https://lesnitsky.dev)
 -   [Vyacheslav Egorov](https://twitter.com/mraleph)
 -   [Tiago Almeida](https://twitter.com/TiagoHenriq)
+-   [Milan Surelia](https://twitter.com/milanpsurelia)
+
 
 ## License
 
